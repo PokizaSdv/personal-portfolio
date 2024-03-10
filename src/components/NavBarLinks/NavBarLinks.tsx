@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { NavBarLinksProps } from "./types";
 import "./NavBarLinks.css";
 
@@ -10,7 +10,9 @@ const NavBarLinks: React.FC<NavBarLinksProps> = ({ links, contactMe }) => {
                 {links.links.map((link, idx) => {
                     return (
                         <li key={idx} className="nav-bar__link-item">
-                            <NavLink to={link.linkTo} className="nav-bar__link">{link.linkText}</NavLink>
+                            <a href={link.linkTo} className="nav-bar__link paragraph-md">
+                                {link.linkText}
+                            </a>
                         </li>
                     );
                 })}
@@ -20,4 +22,4 @@ const NavBarLinks: React.FC<NavBarLinksProps> = ({ links, contactMe }) => {
     );
 };
 
-export {NavBarLinks}
+export { NavBarLinks };

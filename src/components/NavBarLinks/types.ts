@@ -1,12 +1,12 @@
-type NavBarLink = {
+type NavBarLinksItem = {
     linkText: string;
     linkTo: string;
 }
-export type NavBarLinks = {
-    links: NavBarLink[]
+export type NavBarLinksGroup = {
+    links: NavBarLinksItem[]
 }
 
 export type NavBarLinksProps = {
-    links: NavBarLinks;
+    links: NavBarLinksGroup;
     contactMe: () => void;
 }

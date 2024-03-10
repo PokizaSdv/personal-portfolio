@@ -1,6 +1,7 @@
-import { NavBarLinks } from "../../../components/NavBarLinks/types";
+import { FlexLayout, NavBar, NavBarLinks } from "../../../components";
+import { NavBarLinksGroup } from "../../../components/NavBarLinks/types";
 
-const links: NavBarLinks = {
+const links: NavBarLinksGroup = {
     links: [
         {
             linkTo: "/",
@@ -19,4 +20,21 @@ const links: NavBarLinks = {
             linkText: "Testimonials"
         }
     ]
-}
+};
+
+const NavigationBar = () => {
+    const handleContactMe = () => {};
+
+    return (
+        <FlexLayout>
+            <NavBar>
+                <NavBarLinks
+                    links={links}
+                    contactMe={handleContactMe}
+                ></NavBarLinks>
+            </NavBar>
+        </FlexLayout>
+    );
+};
+
+export { NavigationBar };

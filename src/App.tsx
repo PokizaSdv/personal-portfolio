@@ -1,14 +1,7 @@
-import React from "react";
-import { NavBar, NavBarLinks  } from "./components";
-
+import { NavigationBar } from "./pages/landing-page/navigation-bar/NavigationBar";
 
 function App() {
-    return <div className="App">
-        <NavBar
-        />
-    
-
-    </div>;
+    return <NavigationBar />;
 }
 
 export default App;
