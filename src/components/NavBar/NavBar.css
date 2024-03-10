@@ -4,8 +4,7 @@
     height: 120px;
     justify-content: space-between;
     align-items: center;
-    flex-shrink: 0;
-    gap: var(--space-40);
+    
 }
 
 .logo-wrapper {
@@ -14,8 +13,8 @@
 }
 
 .logo {
-    height: 4rem;
-    width: 4rem;
+    height: 5rem;
+    width: 5rem;
     margin-right: var(--space-8);
 }
 .logo-text {

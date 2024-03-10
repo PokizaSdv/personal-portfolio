@@ -1,10 +1,12 @@
+import styled from "styled-components";
 import { FlexLayout, NavBar, NavBarLinks } from "../../../components";
 import { NavBarLinksGroup } from "../../../components/NavBarLinks/types";
+import { Button } from "../../../design-system/Button";
 
 const links: NavBarLinksGroup = {
     links: [
         {
-            linkTo: "/",
+            linkTo: "google.com",
             linkText: "Home"
         },
         {
@@ -22,6 +24,7 @@ const links: NavBarLinksGroup = {
     ]
 };
 
+
 const NavigationBar = () => {
     const handleContactMe = () => {};
 
@@ -32,6 +35,9 @@ const NavigationBar = () => {
                     links={links}
                     contactMe={handleContactMe}
                 ></NavBarLinks>
+                <Button color="secondary" className="paragraph-md">
+                    Contact Me
+                </Button>
             </NavBar>
         </FlexLayout>
     );

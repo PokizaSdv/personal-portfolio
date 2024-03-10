@@ -1,6 +1,13 @@
 .nav-bar__links {
     display: flex;
     gap: var(--space-40);
-    align-items: flex-start;
+    justify-content: space-between;
 }
 
+a {
+    cursor: pointer;
+}
+a:hover {
+    color: var(--primary)
+    
+}

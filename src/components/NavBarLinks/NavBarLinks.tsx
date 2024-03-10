@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import { NavBarLinksProps } from "./types";
 import "./NavBarLinks.css";
 
@@ -17,7 +16,6 @@ const NavBarLinks: React.FC<NavBarLinksProps> = ({ links, contactMe }) => {
                     );
                 })}
             </ul>
-            <div></div>
         </>
     );
 };
