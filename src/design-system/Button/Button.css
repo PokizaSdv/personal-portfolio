@@ -1,0 +1,21 @@
+.btn-primary {
+    border-radius: var(--border-radius-5);
+    background: var(--primary);
+    color: var(--white);
+}
+
+.btn-secondary {
+    background: var(--white);
+    box-shadow: var(--box-shadow-1);
+    border-radius: var(--border-radius-5) solid var(--primary);
+
+    color: var(--primary);
+}
+
+.btn-dribble {
+    border-radius: var(--border-radius-1);
+    background: var(--dribble);
+    box-shadow: var(--box-shadow-2);
+    color: var(--white);
+
+}
