@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { FlexLayout, NavBar, NavBarLinks } from "../../../components";
 import { NavBarLinksGroup } from "../../../components/NavBarLinks/types";
 import { Button } from "../../../design-system/Button";

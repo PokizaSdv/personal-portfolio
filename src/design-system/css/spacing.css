@@ -8,6 +8,7 @@
     --space-16: 1.6rem;
     --space-18: 1.8rem;
     --space-20: 2rem;
+    --space-22: 2.2rem;
     --space-24: 2.4rem;
     --space-28: 2.8rem;
     --space-30: 3rem;
@@ -22,4 +23,10 @@
     --space-64: 6.4rem;
     --space-72: 7.2rem;
     --space-80: 8rem;
+    --space-90: 9rem;
+    --space-100: 10rem;
+    --space-120: 12rem;
+    --space-127: 12.7rem;
+   
+
 }
