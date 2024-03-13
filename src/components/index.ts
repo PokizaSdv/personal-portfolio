@@ -1,3 +1,5 @@
 export * from "./NavBar"
 export * from "./NavBarLinks"
 export * from "./Layout"
+export * from "./HeaderLeft"
+export * from "./HeaderRight"

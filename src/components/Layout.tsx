@@ -6,7 +6,7 @@ export const NavLayout = styled.section`
     box-shadow: var(--box-shadow-1);
 `;
 
-export const AboutLayout = styled.section`
+export const HeaderLayout = styled.section`
     display: flex;
     padding: var(--space-100) var(--space-80) 0 var(--space-80);
 `;

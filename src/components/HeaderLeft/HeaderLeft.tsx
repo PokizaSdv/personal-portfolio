@@ -1,7 +1,7 @@
-import "./AboutLeft.css";
+import "./HeaderLeft.css";
 import { Button } from "../../design-system/Button";
 
-const AboutLeft = () => {
+const HeaderLeft = () => {
     return (
         <div className="header-left">
             <div className="container">
@@ -27,4 +27,4 @@ const AboutLeft = () => {
     );
 };
 
-export { AboutLeft };
+export { HeaderLeft };
