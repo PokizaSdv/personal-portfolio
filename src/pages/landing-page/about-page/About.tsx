@@ -1,12 +1,13 @@
-import { FlexLayout } from "../../../components";
+import { AboutLayout } from "../../../components";
 import { AboutLeft } from "../../../components/AboutLeft";
-import { Button } from "../../../design-system/Button";
+import { AboutRight } from "../../../components/AboutRight";
 
 const AboutSection = () => {
     return (
-        <FlexLayout>
-            <AboutLeft/>
-        </FlexLayout>
+        <AboutLayout>
+            <AboutLeft />
+            <AboutRight />
+        </AboutLayout>
     );
 };
 

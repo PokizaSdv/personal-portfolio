@@ -1,0 +1,14 @@
+
+.header-right {
+    width: 50%;
+    height: 73rem;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+
+}
+
+
+img {
+    object-fit: cover;
+}
