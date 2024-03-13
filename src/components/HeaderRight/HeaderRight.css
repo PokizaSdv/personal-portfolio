@@ -1,14 +1,19 @@
-
 .header-right {
     width: 50%;
     height: 73rem;
     display: flex;
     flex-shrink: 0;
     justify-content: center;
-
 }
 
+.img-wrapper {
+    height: 80%;
+    background-color: var(--bg-shade);
+    border-top-left-radius: var(--border-radius-70);
+    border-top-right-radius: var(--border-radius-70);
+    z-index: 1;
+}
 
 img {
-    object-fit: cover;
+    object-fit: contain;
 }
