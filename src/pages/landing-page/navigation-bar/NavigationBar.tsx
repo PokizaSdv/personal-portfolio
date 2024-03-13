@@ -1,4 +1,4 @@
-import { FlexLayout, NavBar, NavBarLinks } from "../../../components";
+import { NavLayout, NavBar, NavBarLinks } from "../../../components";
 import { NavBarLinksGroup } from "../../../components/NavBarLinks/types";
 import { Button } from "../../../design-system/Button";
 
@@ -28,7 +28,7 @@ const NavigationBar = () => {
     const handleContactMe = () => {};
 
     return (
-        <FlexLayout>
+        <NavLayout>
             <NavBar>
                 <NavBarLinks
                     links={links}
@@ -38,7 +38,7 @@ const NavigationBar = () => {
                     Contact Me
                 </Button>
             </NavBar>
-        </FlexLayout>
+        </NavLayout>
     );
 };
 

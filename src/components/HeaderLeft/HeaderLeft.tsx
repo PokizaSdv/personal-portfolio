@@ -1,10 +1,11 @@
-import "./AboutLeft.css";
+import "./HeaderLeft.css";
 import { Button } from "../../design-system/Button";
 
-const AboutLeft = () => {
+const HeaderLeft = () => {
     return (
         <div className="header-left">
-            <div className="content">
+            <div className="container">
+                <div className="content">
                 <p className="display-lg">Hello, I am Pokiza</p>
                 <h1 className="heading-1">
                     I am a <span>Fullstack</span> Software Engineer
@@ -20,8 +21,10 @@ const AboutLeft = () => {
                     Get in Touch
                 </Button>
             </div>
+            </div>
+            
         </div>
     );
 };
 
-export { AboutLeft };
+export { HeaderLeft };
