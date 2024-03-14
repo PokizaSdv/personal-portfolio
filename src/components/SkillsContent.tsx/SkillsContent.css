@@ -1,0 +1,74 @@
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-22);
+}
+
+.skills-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-22);
+}
+
+.skills-box__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align chevron buttons to the sides */
+    padding: var(--space-40); /* Add padding to the wrapper */
+    background-color: var(--bg-shade);
+}
+
+.skills-box {
+    width: 100%;
+    display: flex;
+    /* gap: var(--space-72); Add gap between skill items */
+    justify-content: space-between;
+    padding: var(--space-20); /* Add padding to the box */
+    overflow-x: auto; /* Add horizontal scroll for smaller screens */
+}
+
+.skill_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    border-top-right-radius: var(--space-72);
+    border-bottom-left-radius: var(--space-72);
+    border-bottom-right-radius: var(--space-72);
+    padding: var(--space-28) var(--space-48); /* Adjust padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease,
+        background-color 0.3s ease; /* Smooth transition with box-shadow and background-color */
+    animation: fadeInUp 0.5s ease; /* Animation for fade in */
+}
+
+.skill_item:hover {
+    transform: translateY(-5px); /* Apply slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Add more depth on hover */
+    background-color: #f0f0f0; /* Change background color on hover */
+}
+.skill-icon {
+    margin-bottom: var(--space-10); /* Adjust margin */
+}
+
+.chevron-left__wrapper,
+.chevron-right__wrapper {
+    padding: 10px; /* Add padding to the chevron wrappers */
+}
+
+.chevron-left__wrapper:hover,
+.chevron-right__wrapper:hover {
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Keyframe animation for fade in */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

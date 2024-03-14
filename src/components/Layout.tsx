@@ -10,3 +10,9 @@ export const HeaderLayout = styled.section`
     display: flex;
     padding: var(--space-100) var(--space-80) 0 var(--space-80);
 `;
+
+export const SkillsLayout = styled.section`
+    padding: 0 var(--space-80) var(--space-100) var(--space-80);
+    display: flex;
+    flex-direction: column;
+`
