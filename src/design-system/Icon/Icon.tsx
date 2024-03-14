@@ -8,8 +8,8 @@ const Icon: React.FC<IconProps> = ({ iconName, className, onClick }) => {
 
     return (
         <svg
-            height="7rem"
-            width="7rem"
+            height="5rem"
+            width="5rem"
             className={className || ""}
             onClick={onClick}
         >

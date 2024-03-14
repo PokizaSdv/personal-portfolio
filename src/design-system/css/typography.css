@@ -33,12 +33,12 @@
 }
 
 .heading-1 {
-    font-size: var(--font-size-54);
+    font-size: var(--font-size-72);
     line-height: var(--line-height-12);
 }
 
 .heading-2 {
-    font-size: var(--font-size-48);
+    font-size: var(--font-size-64);
     line-height: var(--line-height-12);
 }
 

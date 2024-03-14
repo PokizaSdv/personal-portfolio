@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import { Skill } from "./types";
 import { Icon } from "../../design-system/Icon";
 import "./SkillsContent.css";
@@ -9,6 +9,7 @@ type SkillsProps = {
 
 const SkillsContent: React.FC<SkillsProps> = ({ skills }) => {
     const [page, setPage] = useState(0);
+    const [animate, setAnimate] = useState(false);
     const pageSize = 6;
 
     const nextPage = () => {
@@ -17,6 +18,7 @@ const SkillsContent: React.FC<SkillsProps> = ({ skills }) => {
                 ? prevPageSize + pageSize
                 : prevPageSize
         );
+        setAnimate(true)
     };
 
     const previousPage = () => {
@@ -25,7 +27,17 @@ const SkillsContent: React.FC<SkillsProps> = ({ skills }) => {
                 ? prevPageSize - pageSize
                 : prevPageSize
         );
+        setAnimate(true)
     };
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setAnimate(false);
+        }, 300);
+
+        return () => clearTimeout(timer);
+    }, [page]);
+
 
     return (
         <div className="skills-content">
@@ -53,7 +65,7 @@ const SkillsContent: React.FC<SkillsProps> = ({ skills }) => {
                                     iconName={skill.iconName}
                                     className="skill-icon"
                                 />
-                                <p className="display-lg">{skill.name}</p>
+                                <p className="paragraph-lg">{skill.name}</p>
                             </div>
                         );
                     })}
