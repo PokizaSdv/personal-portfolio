@@ -5,17 +5,23 @@
 
     --font-size-74: 7.4rem;
     --font-size-72: 7.2rem;
+    --font-size-68: 6.8rem;
     --font-size-64: 6.4rem;
     --font-size-54: 5.4rem;
     --font-size-48: 4.8rem;
     --font-size-32: 3.2rem;
     --font-size-24: 2.4rem;
     --font-size-22: 2.2rem;
+    --font-size-20: 2rem;
+    --font-size-18: 1.8rem;
+    --font-size-16: 1.6rem;
 
     --line-height-15: 150%;
     --line-height-14: 140%;
     --line-height-13: 130%;
     --line-height-12: 120%;
+    --line-height-11: 110%;
+    --line-height-10: 100%
 }
 
 .heading-1,
@@ -33,13 +39,13 @@
 }
 
 .heading-1 {
-    font-size: var(--font-size-54);
+    font-size: var(--font-size-68);
     line-height: var(--line-height-12);
 }
 
 .heading-2 {
     font-size: var(--font-size-64);
-    line-height: var(--line-height-12);
+    line-height: var(--line-height-10);
 }
 
 .heading-3 {
@@ -69,10 +75,14 @@
 }
 
 .paragraph-lg {
-    font-size: var(--font-size-24);
+    font-size: var(--font-size-22);
 }
 .paragraph-md {
-    font-size: var(--font-size-22);
+    font-size: var(--font-size-20);
+}
+
+.paragraph-sm {
+    font-size: var(--font-size-16);
 }
 
 .button-text-white,

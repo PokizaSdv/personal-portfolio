@@ -1,8 +1,7 @@
 .header-left {
-    display: flex;
+    
     width: 50%;
-    height: 70vh;
-    align-items: center;    
+   padding-top: var(--space-100); 
 }
 
 .container {
@@ -18,7 +17,4 @@ span {
     display: flex;
     flex-direction: column;
     gap: var(--space-22);
-}
-.actions {
-    padding-top: var(--space-22);
 }

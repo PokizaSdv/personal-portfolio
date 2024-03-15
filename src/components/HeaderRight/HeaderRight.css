@@ -1,14 +1,23 @@
-
 .header-right {
     width: 50%;
-    height: 73rem;
+    height: auto;
     display: flex;
-    flex-shrink: 0;
     justify-content: center;
-
 }
 
+.img-wrapper {
+    border-top-left-radius: var(--border-radius-70);
+    border-top-right-radius: var(--border-radius-70);
+    display: flex;
+    transition: all 1s;
+}
+
+.img-wrapper:hover {
+    transform: scale(1.07);
+}
 
 img {
-    object-fit: cover;
+    width: 60rem;
+    height: auto;
+    object-fit: contain;
 }

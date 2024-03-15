@@ -23,21 +23,20 @@ const links: NavBarLinksGroup = {
     ]
 };
 
-
 const NavigationBar = () => {
     const handleContactMe = () => {};
 
     return (
         <NavLayout>
-            <NavBar>
-                <NavBarLinks
-                    links={links}
-                    contactMe={handleContactMe}
-                ></NavBarLinks>
-                <Button color="secondary" className="paragraph-md">
-                    Contact Me
-                </Button>
-            </NavBar>
+                <NavBar>
+                    <NavBarLinks
+                        links={links}
+                        contactMe={handleContactMe}
+                    ></NavBarLinks>
+                    <Button color="secondary" className="paragraph-md">
+                        Contact Me
+                    </Button>
+                </NavBar>
         </NavLayout>
     );
 };

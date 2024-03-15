@@ -8,7 +8,7 @@ const HeaderLeft = () => {
                 <div className="content">
                 <p className="display-lg">Hello, I am Pokiza</p>
                 <h1 className="heading-1">
-                    I am a <span>Fullstack</span> Software Engineer
+                    I am a <span>Fullstack</span> <br /> Software Engineer
                 </h1>
                 <p className="paragraph-lg">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.

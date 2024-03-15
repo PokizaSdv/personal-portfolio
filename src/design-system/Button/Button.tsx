@@ -1,4 +1,3 @@
-import { FC } from "react";
 import { ButtonProps } from "./types";
 import { trimWhiteSpaces } from "../../utils";
 import "./Button.css";
