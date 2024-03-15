@@ -16,7 +16,7 @@
     transform: scale(1.07);
 }
 
-img {
+.hero-img {
     width: 60rem;
     height: auto;
     object-fit: contain;
