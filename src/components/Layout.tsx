@@ -6,13 +6,13 @@ export const NavLayout = styled.section`
     box-shadow: var(--box-shadow-1);
 `;
 
-export const HeaderLayout = styled.section`
+export const RawLayout = styled.section`
     display: flex;
-    padding: var(--space-80) 0 0 var(--space-80);
+    padding: var(--space-32) 0 0 var(--space-80);
 `;
 
-export const SkillsLayout = styled.section`
-    padding: 0 var(--space-80) var(--space-80) var(--space-80);
+export const ColumnLayout = styled.section`
     display: flex;
+    padding: 0 var(--space-80) var(--space-80) var(--space-80);
     flex-direction: column;
 `

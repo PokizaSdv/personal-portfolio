@@ -1,4 +1,4 @@
-import { SkillsLayout } from "../../../components";
+import { ColumnLayout } from "../../../components";
 import { SkillsContent } from "../../../components/SkillsContent.tsx";
 import { Skill } from "../../../components/SkillsContent.tsx/types";
 
@@ -27,12 +27,12 @@ export const skills: Skill[] = [
     { name: "Google Cloud", iconName: "google-cloud" }
 ];
 
-const Skills = () => {
+const SkillsSection = () => {
     return (
-        <SkillsLayout>
+        <ColumnLayout>
             <SkillsContent skills={skills} />
-        </SkillsLayout>
+        </ColumnLayout>
     );
 };
 
-export { Skills };
+export { SkillsSection };
