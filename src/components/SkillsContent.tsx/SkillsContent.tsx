@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { Skill } from "./types";
 import { Icon } from "../../design-system/Icon";
 import "./SkillsContent.css";
@@ -9,7 +9,6 @@ type SkillsProps = {
 
 const SkillsContent: React.FC<SkillsProps> = ({ skills }) => {
     const [page, setPage] = useState(0);
-    const [animate, setAnimate] = useState(false);
     const pageSize = 6;
 
     const nextPage = () => {
@@ -18,7 +17,6 @@ const SkillsContent: React.FC<SkillsProps> = ({ skills }) => {
                 ? prevPageSize + pageSize
                 : prevPageSize
         );
-        setAnimate(true)
     };
 
     const previousPage = () => {
@@ -27,17 +25,7 @@ const SkillsContent: React.FC<SkillsProps> = ({ skills }) => {
                 ? prevPageSize - pageSize
                 : prevPageSize
         );
-        setAnimate(true)
     };
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setAnimate(false);
-        }, 300);
-
-        return () => clearTimeout(timer);
-    }, [page]);
-
 
     return (
         <div className="skills-content">
@@ -48,7 +36,7 @@ const SkillsContent: React.FC<SkillsProps> = ({ skills }) => {
 
             <div className="skills-box__wrapper">
                 <div className="chevron-left__wrapper">
-                {page > 0 && (
+                    {page > 0 && (
                         <Icon
                             className="chevron-left"
                             iconName={"chevron-left"}
@@ -56,16 +44,19 @@ const SkillsContent: React.FC<SkillsProps> = ({ skills }) => {
                         />
                     )}
                 </div>
-           
+
                 <div className="skills-box">
                     {skills.slice(page, page + pageSize).map((skill, idx) => {
                         return (
-                            <div key={idx} className="skill_item">
+                            <div
+                                key={idx}
+                                className="skill_item"
+                            >
                                 <Icon
                                     iconName={skill.iconName}
                                     className="skill-icon"
                                 />
-                                <p className="paragraph-lg">{skill.name}</p>
+                                <p className="paragraph-sm">{skill.name}</p>
                             </div>
                         );
                     })}
@@ -77,7 +68,6 @@ const SkillsContent: React.FC<SkillsProps> = ({ skills }) => {
                             iconName={"chevron-right"}
                             onClick={nextPage}
                         />
-                        
                     )}
                 </div>
             </div>

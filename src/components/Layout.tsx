@@ -8,11 +8,11 @@ export const NavLayout = styled.section`
 
 export const HeaderLayout = styled.section`
     display: flex;
-    padding: var(--space-100) var(--space-80) 0 var(--space-80);
+    padding: var(--space-80) 0 0 var(--space-80);
 `;
 
 export const SkillsLayout = styled.section`
-    padding: 0 var(--space-80) var(--space-100) var(--space-80);
+    padding: 0 var(--space-80) var(--space-80) var(--space-80);
     display: flex;
     flex-direction: column;
 `
