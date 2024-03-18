@@ -1,6 +1,6 @@
 import { ColumnLayout } from "../../../components";
-import { ServicesContent } from "../../../components/ServicesContent.tsx";
-import { Service } from "../../../components/ServicesContent.tsx/types";
+import { ServicesContent } from "../../../components/ServicesContent";
+import { Service } from "../../../components/ServicesContent/types";
 
 export const services: Service[] = [
     {

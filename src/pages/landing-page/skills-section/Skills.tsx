@@ -14,6 +14,7 @@ export const skills: Skill[] = [
     { name: "GIT", iconName: "git" },
     { name: "GitHub", iconName: "github" },
     { name: "MongoDB", iconName: "mongodb" },
+    { name: "Postman", iconName: "postman" },
     { name: "Prisma", iconName: "prisma" },
     { name: "VS code", iconName: "visual-studio-code" },
     { name: "Terminal", iconName: "terminal" },
