@@ -11,7 +11,7 @@ const NavBar: React.FC<NavBarProps> = ({children}) => {
         <div className="navigation-bar">
             <div className="logo-wrapper">
                 <img className="logo" src={logo} alt="Logo" />
-                <img className="logo-text" src={logotext} alt="Logo" />
+                
             </div>
             {children}
         </div>
