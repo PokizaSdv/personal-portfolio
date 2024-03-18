@@ -23,6 +23,11 @@ export type IconName =
     | "prisma"
     | "chevron-right"
     | "chevron-left"
+    | "frontend"
+    | "backend"
+    | "design"
+    | "development"
+    | "postman"
 
 export type IconProps = {
     iconName: IconName;
