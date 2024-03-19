@@ -1,6 +1,6 @@
 .about-container {
     display: flex;
-    /* gap: var(--space-100); */
+    gap: var(--space-80);
 }
 
 .about-right {
@@ -15,9 +15,10 @@
 }
 
 .about-img {
-    width: 50rem;
+    width: 85rem;
     height: auto;
     object-fit: contain;
+    border-radius: var(--border-radius-70);
 }
 
 .about-left {

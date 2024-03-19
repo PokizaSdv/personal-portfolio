@@ -19,7 +19,7 @@ export type IconName =
     | "sass"
     | "terminal"
     | "express-js"
-    | "visual-studio-code"
+    | "vscode"
     | "prisma"
     | "chevron-right"
     | "chevron-left"
@@ -28,6 +28,8 @@ export type IconName =
     | "design"
     | "development"
     | "postman"
+    | "management"
+    | "database"
 
 export type IconProps = {
     iconName: IconName;

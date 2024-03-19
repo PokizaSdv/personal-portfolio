@@ -15,8 +15,9 @@
     align-items: center;
     justify-content: space-between;
     padding: var(--space-22);
-    background-color: var(--bg-shade);
+    /* background-color: var(--bg-shade); */
     border-radius: var(--border-radius-70);
+    
 }
 
 .skills-box {
@@ -28,9 +29,6 @@
     overflow-x: auto;
 }
 
-.skills-box.next-page {
-    transform: translateX(-100%);
-}
 
 .skill_item {
     width: 12rem;
@@ -40,18 +38,18 @@
     align-items: center;
     justify-content: center;
     background-color: var(--white);
-    border-top-right-radius: var(--space-50);
-    border-bottom-left-radius: var(--space-50);
-    border-bottom-right-radius: var(--space-50);
+    border-top-right-radius: var(--space-30);
+    border-bottom-left-radius: var(--space-30);
+    border-bottom-right-radius: var(--space-30);
     padding: var(--space-22) var(--space-18);
     box-shadow: var(--box-shadow-3);
     transition: transform 0.5s ease;
 }
 
 .skill_item:hover {
-    transform: translateY(-10px); 
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
-    background-color: #f0f0f0; 
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
 }
 .skill-icon {
     margin-bottom: var(--space-10); /* Adjust margin */
@@ -66,5 +64,3 @@
 .chevron-right__wrapper:hover {
     cursor: pointer; /* Show pointer cursor on hover */
 }
-
-

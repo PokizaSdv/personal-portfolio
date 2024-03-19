@@ -9,15 +9,10 @@
     border-top-left-radius: var(--border-radius-70);
     border-top-right-radius: var(--border-radius-70);
     display: flex;
-    transition: all 1s;
-}
-
-.img-wrapper:hover {
-    transform: scale(1.07);
 }
 
 .hero-img {
-    width: 60rem;
+    width: 80rem;
     height: auto;
     object-fit: contain;
 }

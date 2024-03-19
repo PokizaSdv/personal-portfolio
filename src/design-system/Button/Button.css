@@ -3,6 +3,7 @@
     background: var(--primary);
     color: var(--white);
     padding: var(--space-10) var(--space-36);
+    border: none;
 }
 
 .btn-secondary {
