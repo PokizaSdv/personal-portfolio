@@ -22,7 +22,7 @@ export const services: Service[] = [
             "Design visually stunning interfaces that reflect your brand identity and values. Iterate quickly and collaboratively to refine and perfect your UI designs."
     },
     {
-        iconName: "development",
+        iconName: "management",
         title: "Development",
         description:
             "Develop customized solutions tailored to your unique business requirements. Leverage the latest technologies and frameworks to build powerful applications. "

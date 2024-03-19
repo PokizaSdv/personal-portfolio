@@ -26,9 +26,7 @@
 
 .heading-1,
 .heading-2,
-.heading-3,
-.display-lg,
-.display-md {
+.heading-3 {
     color: var(--heading);
 }
 
@@ -57,7 +55,7 @@
 .display-md {
     font-weight: var(--font-weight-600);
     line-height: var(--line-height-15);
-    color: var(--heading-small);
+    color: var(--body);
 }
 
 .display-lg {
