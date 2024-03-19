@@ -1,6 +1,6 @@
 import { ColumnLayout } from "../../../components";
-import { SkillsContent } from "../../../components/SkillsContent.tsx";
-import { Skill } from "../../../components/SkillsContent.tsx/types";
+import { SkillsContent } from "../../../components/SkillsContent";
+import { Skill } from "../../../components/SkillsContent/types";
 
 export const skills: Skill[] = [
     { name: "HTML", iconName: "html5" },
@@ -16,7 +16,7 @@ export const skills: Skill[] = [
     { name: "MongoDB", iconName: "mongodb" },
     { name: "Postman", iconName: "postman" },
     { name: "Prisma", iconName: "prisma" },
-    { name: "VS code", iconName: "visual-studio-code" },
+    { name: "VS code", iconName: "vscode" },
     { name: "Terminal", iconName: "terminal" },
     { name: "Express-js", iconName: "express-js" },
     { name: "Figma", iconName: "figma" },
@@ -25,6 +25,7 @@ export const skills: Skill[] = [
     { name: "jira", iconName: "jira" },
     { name: "Material UI", iconName: "material-ui" },
     { name: "Netlify", iconName: "netlify" },
+    { name: "Database", iconName: "database" },
     { name: "Google Cloud", iconName: "google-cloud" }
 ];
 
