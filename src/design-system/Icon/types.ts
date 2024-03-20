@@ -30,6 +30,8 @@ export type IconName =
     | "postman"
     | "management"
     | "database"
+    | "eye"
+    | "github-outlined"
 
 export type IconProps = {
     iconName: IconName;
