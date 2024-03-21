@@ -1,18 +1,22 @@
 .input {
     outline: none !important;
-    height: 3.6rem;
-    border: 0.15rem solid var(--primary);
-    padding: var(--space-8) var(--space-16);
+    height: 5.6rem;
+    border: 0.15rem solid var(--primary-2);
+    border-radius: var(--border-radius-8);
+    padding: var(--space-16);
     font-family: inherit;
-    font-size: var(--font-size-16);
+    font-size: var(--font-size-20);
     color: var(--heading);
-    width: 100%;
+    width: 35rem;
     display: block;
     transition: all 0.3s;
 }
 
 .input-textarea {
     resize: none;
+    height: var(--space-160);
+    width: 100%;
+
 }
 
 input::placeholder,
@@ -46,6 +50,7 @@ input::placeholder,
     display: flex;
     flex-direction: column;
     gap: 4px;
+    align-items: start;
 }
 
 .input-wrapper label {
