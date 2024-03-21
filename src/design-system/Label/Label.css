@@ -1,0 +1,25 @@
+.label {
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-14);
+    color: var(--heading-small);
+    font-weight: var(--font-weight-400);
+}
+
+.label.label-error {
+    color: var(--dribble);
+}
+
+.label.label-disabled {
+    color: var(--body);
+}
+
+.hint-message {
+    font-size: var(--font-size-12);
+    line-height: var(--line-height-14);
+    color: var(--heading-small);
+    font-weight: var(--font-weight-400);
+}
+
+.hint-message--error {
+    color: var(--dribble);
+}
