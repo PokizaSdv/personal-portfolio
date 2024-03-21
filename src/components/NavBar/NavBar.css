@@ -20,6 +20,8 @@
     margin-right: var(--space-8);
 }
 .logo-text {
-    height: 2rem;
-    width: 11rem;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: var(--font-size-22);
+    color: #888bee;
 }

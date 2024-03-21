@@ -14,10 +14,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: var(--space-22);
-    /* background-color: var(--bg-shade); */
-    border-radius: var(--border-radius-70);
-    
+    padding: var(--space-22) var(--space-100); 
+    background-color: var(--bg-shade);
+    margin-left: calc(-1 * var(--space-100)); 
+    margin-right: calc(-1 * var(--space-100)); 
 }
 
 .skills-box {
