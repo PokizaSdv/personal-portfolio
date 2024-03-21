@@ -4,6 +4,7 @@
     color: var(--white);
     padding: var(--space-10) var(--space-36);
     border: none;
+    cursor: pointer;
 }
 
 .btn-secondary {
@@ -13,6 +14,8 @@
     border: var(--space-1) solid var(--primary);
     color: var(--primary);
     padding: var(--space-10) var(--space-36);
+    cursor: pointer;
+
 }
 
 .btn-dribble {

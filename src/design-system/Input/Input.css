@@ -50,7 +50,7 @@ input::placeholder,
     display: flex;
     flex-direction: column;
     gap: 4px;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .input-wrapper label {
