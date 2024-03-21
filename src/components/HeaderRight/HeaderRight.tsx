@@ -1,6 +1,5 @@
 import "./HeaderRight.css";
-import heroImg from "../../assets/fixed.png";
-
+import heroImg from "../../assets/headerImg.png"
 const HeaderRight = () => {
     return (
         <div className="header-right">
