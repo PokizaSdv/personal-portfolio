@@ -1,7 +1,7 @@
 .input {
     outline: none !important;
     height: 5.6rem;
-    border: 0.15rem solid var(--primary-2);
+    border: 0.15rem solid var(--input);
     border-radius: var(--border-radius-8);
     padding: var(--space-16);
     font-family: inherit;
@@ -16,14 +16,12 @@
     resize: none;
     height: var(--space-160);
     width: 100%;
-
 }
 
 input::placeholder,
 :-ms-input-placeholder {
     color: var(--gray);
 }
-
 
 .input:hover:not(.input-error, :disabled) {
     border: 0.15rem solid var(--primary);
