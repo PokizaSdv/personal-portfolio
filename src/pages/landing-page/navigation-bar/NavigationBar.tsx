@@ -1,42 +1,37 @@
 import { NavLayout, NavBar, NavBarLinks } from "../../../components";
-import { NavBarLinksGroup } from "../../../components/NavBarLinks/types";
+import { NavBarLinkItem } from "../../../components/NavBarLinks/types";
 import { Button } from "../../../design-system/Button";
 
-const links: NavBarLinksGroup = {
-    links: [
-        {
-            linkTo: "google.com",
-            linkText: "Home"
-        },
-        {
-            linkTo: "/",
-            linkText: "Portfolio"
-        },
-        {
-            linkTo: "/",
-            linkText: "About me"
-        },
-        {
-            linkTo: "/",
-            linkText: "Testimonials"
-        }
-    ]
-};
+const links: NavBarLinkItem[] = [
+    {
+        linkTo: "google.com",
+        linkText: "Home"
+    },
+    {
+        linkTo: "/",
+        linkText: "Portfolio"
+    },
+    {
+        linkTo: "/",
+        linkText: "About me"
+    },
+    {
+        linkTo: "/",
+        linkText: "Testimonials"
+    }
+];
 
 const NavigationBar = () => {
     const handleContactMe = () => {};
 
     return (
         <NavLayout>
-                <NavBar>
-                    <NavBarLinks
-                        links={links}
-                        contactMe={handleContactMe}
-                    ></NavBarLinks>
-                    <Button color="secondary" className="paragraph-md">
-                        Contact Me
-                    </Button>
-                </NavBar>
+            <NavBar>
+                <NavBarLinks links={links}></NavBarLinks>
+                <Button color="secondary" className="paragraph-md" onClick={handleContactMe}>
+                    Contact Me
+                </Button>
+            </NavBar>
         </NavLayout>
     );
 };
