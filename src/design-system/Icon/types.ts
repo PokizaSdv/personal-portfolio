@@ -31,7 +31,11 @@ export type IconName =
     | "management"
     | "database"
     | "eye"
+    | "github-sq"
     | "github-outlined"
+    | "facebook"
+    | "linkedin"
+    | "twitterx"
 
 export type IconProps = {
     iconName: IconName;
