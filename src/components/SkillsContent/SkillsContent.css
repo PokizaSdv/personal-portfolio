@@ -14,10 +14,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: var(--space-22) var(--space-100); 
-    background-color: var(--bg-shade);
-    margin-left: calc(-1 * var(--space-100)); 
-    margin-right: calc(-1 * var(--space-100)); 
+    padding: var(--space-22) var(--space-100);
+    background: linear-gradient(to top, #f5fcff, #d4f1fc);
+    margin-left: calc(-1 * var(--space-100));
+    margin-right: calc(-1 * var(--space-100));
 }
 
 .skills-box {
@@ -29,7 +29,6 @@
     overflow-x: auto;
 }
 
-
 .skill_item {
     width: 12rem;
     height: 12rem;
@@ -37,19 +36,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--white);
-    border-top-right-radius: var(--space-30);
-    border-bottom-left-radius: var(--space-30);
-    border-bottom-right-radius: var(--space-30);
+    /* background-color: var(--white); */
+    /* border-top-right-radius: var(--space-30); */
+    /* border-bottom-left-radius: var(--space-30); */
+    /* border-bottom-right-radius: var(--space-30); */
     padding: var(--space-22) var(--space-18);
-    box-shadow: var(--box-shadow-3);
+    /* box-shadow: var(--box-shadow-3); */
     transition: transform 0.5s ease;
 }
 
 .skill_item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    background-color: #f0f0f0;
+    /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); */
+    /* background-color: #f0f0f0; */
 }
 .skill-icon {
     margin-bottom: var(--space-10); /* Adjust margin */

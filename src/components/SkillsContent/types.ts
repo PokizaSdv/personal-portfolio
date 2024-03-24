@@ -1,6 +1,7 @@
-import { IconName } from "../../design-system/Icon";
+// import { IconName } from "../../design-system/Icon";
 
 export type Skill = {
-    name: string
-    iconName: IconName;
+    name: string;
+    // iconName: IconName
+    imgUrl: string;
 }
