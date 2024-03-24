@@ -19,6 +19,7 @@
     --font-size-12: 1.2rem;
 
     --line-height-15: 150%;
+    --line-height-17: 170%;
     --line-height-14: 140%;
     --line-height-13: 130%;
     --line-height-12: 120%;
@@ -35,7 +36,7 @@
 .heading-1,
 .heading-2,
 .heading-3 {
-    font-weight: var(--font-weight-700);
+    font-weight: var(--font-weight-600);
 }
 
 .heading-1 {
@@ -56,7 +57,7 @@
 .display-lg,
 .display-md {
     font-weight: var(--font-weight-600);
-    line-height: var(--line-height-15);
+    line-height: var(--line-height-10);
     color: var(--body);
 }
 
@@ -72,19 +73,19 @@
 .paragraph-md,
 .paragraph-sm {
     font-weight: var(--font-weight-400);
-    line-height: var(--line-height-15);
+    line-height: var(--line-height-17);
     color: var(--body);
 }
 
 .paragraph-lg {
-    font-size: var(--font-size-22);
+    font-size: var(--font-size-18);
 }
 .paragraph-md {
-    font-size: var(--font-size-20);
+    font-size: var(--font-size-16);
 }
 
 .paragraph-sm {
-    font-size: var(--font-size-16);
+    font-size: var(--font-size-14);
 }
 
 .button-text-white,

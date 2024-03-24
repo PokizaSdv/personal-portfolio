@@ -11,7 +11,7 @@
 
 .service {
     width: calc((100 - var(--space-96)) / 4);
-    background-color: var(--bg-shade);
+    background: linear-gradient(to top, #f5fcff, #d4f1fc);
     border-radius: var(--border-radius-10);
     padding: var(--space-32);
     border: 0.4rem solid transparent;

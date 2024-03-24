@@ -2,10 +2,17 @@ import React, { useState } from "react";
 import { Skill } from "./types";
 import { Icon } from "../../design-system/Icon";
 import "./SkillsContent.css";
+import styled from "styled-components";
 
 type SkillsProps = {
     skills: Skill[];
 };
+
+const StyledImg = styled.img`
+    width: 7rem;
+    height: 7rem;
+    margin-bottom: 2rem;
+`
 
 const SkillsContent: React.FC<SkillsProps> = ({ skills }) => {
     const [page, setPage] = useState(0);
@@ -52,11 +59,8 @@ const SkillsContent: React.FC<SkillsProps> = ({ skills }) => {
                                 key={idx}
                                 className="skill_item"
                             >
-                                <Icon
-                                    iconName={skill.iconName}
-                                    className="skill-icon"
-                                />
-                                <p className="paragraph-sm">{skill.name}</p>
+                               <StyledImg src={skill.imgUrl}/>
+                                <p className="paragraph-md">{skill.name}</p>
                             </div>
                         );
                     })}
