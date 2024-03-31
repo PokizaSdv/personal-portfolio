@@ -1,11 +1,11 @@
-import { RawLayout } from "../../../components";
+import { Container } from "../../../components";
 import { AboutContent } from "../../../components/AboutContent";
 
 const AboutSection = () => {
     return (
-        <RawLayout>
+        <Container>
             <AboutContent />
-        </RawLayout>
+        </Container>
     );
 };
 
