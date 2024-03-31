@@ -1,4 +1,4 @@
-import { NavLayout, NavBar, NavBarLinks } from "../../../components";
+import { Container, NavBar, NavBarLinks } from "../../../components";
 import { NavBarLinkItem } from "../../../components/NavBarLinks/types";
 import { Button } from "../../../design-system/Button";
 
@@ -30,7 +30,7 @@ const NavigationBar = () => {
     };
 
     return (
-        <NavLayout>
+        <Container>
             <NavBar>
                 <NavBarLinks links={links}></NavBarLinks>
                 <Button
@@ -41,7 +41,7 @@ const NavigationBar = () => {
                     Contact Me
                 </Button>
             </NavBar>
-        </NavLayout>
+        </Container>
     );
 };
 
