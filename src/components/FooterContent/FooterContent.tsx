@@ -1,8 +1,8 @@
 import "./FooterContent.css"
-import logo from "../../assets/images/Logo.png"
 import { NavBarLinkItem } from "../NavBarLinks/types"
 import React from "react"
 import { Icon } from "../../design-system/Icon"
+import { Logo } from "../../design-system/Logo/Logo"
 
 type FooterProps = {
     links: NavBarLinkItem[]
@@ -11,10 +11,7 @@ type FooterProps = {
 const FooterContent: React.FC<FooterProps> = ({links}) => {
     return (
         <footer className="footer">
-            <div className="logo-wrapper">
-                <img className="logo" src={logo} alt="Logo" />
-                <p className="logo-text">POKIZADEV</p>
-            </div>
+            <Logo/>
             <ul className="nav-bar__links">
                 {links.map((link, idx) => {
                     return (
@@ -32,7 +29,6 @@ const FooterContent: React.FC<FooterProps> = ({links}) => {
                 <Icon iconName="twitterx"/>
                 <Icon iconName="facebook"/>
                 
-
             </div>
         </footer>
     )

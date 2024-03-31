@@ -1,20 +1,8 @@
 .footer {
-    background: linear-gradient(to top, #f5fcff, #d4f1fc);
+    background: var(--black);
+    /* border-top: 1px solid var(--bg-shade); */
     padding: var(--space-100) var(--space-80);
     display: flex;
     justify-content: space-between;
-}
-
-.nav-bar__links {
-    display: flex;
-    gap: var(--space-100);
-    justify-content: space-between;
-}
-
-a {
-    cursor: pointer;
-}
-a:hover {
-    color: var(--primary)
-    
+    align-items: center;
 }
