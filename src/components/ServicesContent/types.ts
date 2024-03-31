@@ -1,7 +1,7 @@
 import { IconName } from "../../design-system/Icon"
 
 export type Service = {
-    iconName: IconName;
+    imgUrl: string;
     title: string;
     description: string
 }
