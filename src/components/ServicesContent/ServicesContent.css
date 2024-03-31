@@ -11,10 +11,11 @@
 
 .service {
     width: calc((100 - var(--space-96)) / 4);
-    background: linear-gradient(to top, #f5fcff, #d4f1fc);
+    background: linear-gradient(to bottom, #f5fcff, #ffffff);
     border-radius: var(--border-radius-10);
     padding: var(--space-32);
-    border: 0.4rem solid transparent;
+    border-bottom: 0.4rem solid transparent;
+    box-shadow: var(--box-shadow-4);
 
     display: flex;
     flex-direction: column;
@@ -23,8 +24,17 @@
 
 }
 
+.img-wrapper {
+    display: inline-block;
+    width: max-content;
+    background-color: var(--white);
+    border-radius: var(--border-radius-10);
+    padding: var(--space-8) var(--space-8) var(--space-4) var(--space-8);
+    box-shadow: var(--box-shadow-4);
+}
+
 .service:hover {
     border-bottom: 0.4rem solid var(--primary);
-    border-right: 0.4rem solid var(--primary);
+    /* border-right: 0.4rem solid var(--primary); */
     color: darkgray;
 }

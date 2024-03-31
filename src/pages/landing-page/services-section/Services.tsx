@@ -1,29 +1,33 @@
-import { ColumnLayout } from "../../../components";
+import { Container } from "../../../components";
 import { ServicesContent } from "../../../components/ServicesContent";
 import { Service } from "../../../components/ServicesContent/types";
+import frontend from "../../../assets/icons/frontend.svg"
+import backend from "../../../assets/icons/backend.svg"
+import design from "../../../assets/icons/design.svg"
+import development from "../../../assets/icons/development.svg"
 
 export const services: Service[] = [
     {
-        iconName: "frontend",
-        title: "Frontend",
+        imgUrl: frontend,
+        title: "Frontend Development",
         description:
             "Enhance user satisfaction through responsive and interactive frontend solutions. Create seamless and intuitive user experiences with cutting-edge frontend technologies."
     },
     {
-        iconName: "backend",
-        title: "Backend",
+        imgUrl: backend,
+        title: "Backend Development",
         description:
             "Build robust and scalable backend systems to power your applications. Ensure smooth data management and processing with efficient backend development."
     },
     {
-        iconName: "design",
+        imgUrl: design,
         title: "UI/UX design",
         description:
-            "Design visually stunning interfaces that reflect your brand identity and values. Iterate quickly and collaboratively to refine and perfect your UI designs."
+            "Design visually stunning interfaces that reflect your brand identity and values. Iterate quickly and collaboratively to refine and perfect your UI designs.Transforming your vision into stunning and user-friendly interfaces."
     },
     {
-        iconName: "management",
-        title: "Development",
+        imgUrl: development,
+        title: "Integration Development",
         description:
             "Develop customized solutions tailored to your unique business requirements. Leverage the latest technologies and frameworks to build powerful applications. "
     }
@@ -31,9 +35,9 @@ export const services: Service[] = [
 
 const ServicesSection = () => {
     return (
-        <ColumnLayout>
+        <Container>
             <ServicesContent services={services}></ServicesContent>
-        </ColumnLayout>
+        </Container>
     );
 };
 

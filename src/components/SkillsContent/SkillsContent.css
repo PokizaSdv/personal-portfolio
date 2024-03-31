@@ -1,65 +1,47 @@
-.skills-content {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-32);
-}
+/* .skills-content {
+    max-width: max-content;
+} */
 
 .skills-header {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-22);
-}
-
-.skills-box__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: var(--space-22) var(--space-100);
-    background: linear-gradient(to top, #f5fcff, #d4f1fc);
-    margin-left: calc(-1 * var(--space-100));
-    margin-right: calc(-1 * var(--space-100));
+   margin-bottom: var(--space-32);
 }
 
 .skills-box {
-    width: 100%;
+    max-width: 144rem;
     display: flex;
-    justify-content: space-between;
+    /* white-space: nowrap; */
+    /* overflow-x: hidden; */
     padding: var(--space-20);
-    transition: transform 0.5s ease;
-    overflow-x: auto;
+    animation: scrollSkills 30s linear infinite;
+
+}
+
+@keyframes scrollSkills {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-145%);
+    }
 }
 
 .skill_item {
+    flex-shrink: 0;
     width: 12rem;
-    height: 12rem;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-color: var(--white); */
-    /* border-top-right-radius: var(--space-30); */
-    /* border-bottom-left-radius: var(--space-30); */
-    /* border-bottom-right-radius: var(--space-30); */
     padding: var(--space-22) var(--space-18);
-    /* box-shadow: var(--box-shadow-3); */
-    transition: transform 0.5s ease;
+    margin-right: var(--space-20);
+    /* transition: transform 0.5s ease; */
 }
 
-.skill_item:hover {
+/* .skill_item:hover {
     transform: translateY(-10px);
-    /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); */
-    /* background-color: #f0f0f0; */
-}
+} */
+
 .skill-icon {
     margin-bottom: var(--space-10); /* Adjust margin */
-}
-
-.chevron-left__wrapper,
-.chevron-right__wrapper {
-    padding: 10px; /* Add padding to the chevron wrappers */
-}
-
-.chevron-left__wrapper:hover,
-.chevron-right__wrapper:hover {
-    cursor: pointer; /* Show pointer cursor on hover */
 }

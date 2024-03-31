@@ -25,7 +25,7 @@ const ContactContent = () => {
 
     return (
         <div className="contact__content">
-            <h2 className="heading-2">Contact Me</h2>
+            <h2 id="contactme" className="heading-2">Contact Me</h2>
             <p className="paragraph-md">
                 Interested in working together or just have a question? <br />Let's
                 connect and make things happen.

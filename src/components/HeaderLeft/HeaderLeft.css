@@ -1,20 +1,15 @@
 .header-left {
-    
-    width: 50%;
-   padding-top: var(--space-100); 
+    width: 60%;
 }
 
-.container {
-    display: flex;
-    gap: var(--space-32);
-    flex-direction: column;
-}
-
-span {
-    color: var(--primary);
-}
 .content {
     display: flex;
     flex-direction: column;
     gap: var(--space-22);
+    margin-bottom: var(--space-64);
+}
+
+
+span {
+    color: var(--primary);
 }

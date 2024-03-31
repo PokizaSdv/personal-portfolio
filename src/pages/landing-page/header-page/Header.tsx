@@ -1,11 +1,11 @@
-import { RawLayout, HeaderLeft, HeaderRight } from "../../../components";
+import { Container, HeaderLeft, HeaderRight } from "../../../components";
 
 const HeaderSection = () => {
     return (
-        <RawLayout>
+        <Container>
             <HeaderLeft />
             <HeaderRight />
-        </RawLayout>
+        </Container>
     );
 };
 

@@ -36,6 +36,9 @@ export type IconName =
     | "facebook"
     | "linkedin"
     | "twitterx"
+    | "logo"
+    | "email"
+    | "phone"
 
 export type IconProps = {
     iconName: IconName;

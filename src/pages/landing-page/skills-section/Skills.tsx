@@ -1,4 +1,4 @@
-import { ColumnLayout } from "../../../components";
+import { Container } from "../../../components";
 import { SkillsContent } from "../../../components/SkillsContent";
 import { Skill } from "../../../components/SkillsContent/types";
 
@@ -58,9 +58,9 @@ export const skills: Skill[] = [
 
 const SkillsSection = () => {
     return (
-        <ColumnLayout>
+        <Container>
             <SkillsContent skills={skills} />
-        </ColumnLayout>
+        </Container>
     );
 };
 

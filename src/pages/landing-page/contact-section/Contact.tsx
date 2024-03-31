@@ -1,11 +1,11 @@
-import { ColumnLayout } from "../../../components";
+import { Container } from "../../../components";
 import { ContactContent } from "../../../components/ContactContent";
 
 const ContactSection = () => {
     return (
-        <ColumnLayout>
+        <Container>
             <ContactContent />
-        </ColumnLayout>
+        </Container>
     );
 };
 

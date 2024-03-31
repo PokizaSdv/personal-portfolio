@@ -6,22 +6,5 @@
     height: 10rem;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--white);
-}
-
-.logo-wrapper {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    height: 5rem;
-    width: 5rem;
-    margin-right: var(--space-8);
-}
-.logo-text {
-    font-family:'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: var(--font-size-22);
-    color: #888bee;
+    /* background-color: var(--white); */
 }

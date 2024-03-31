@@ -1,9 +1,9 @@
-import { ColumnLayout } from "../../../components";
+import { Container } from "../../../components";
 import { ProjectsContent } from "../../../components/ProjectsContent";
 import { Project } from "../../../components/ProjectsContent/types";
-import projectifyImg from "../../../assets/projectify1.jpg";
-import restaurantImg from "../../../assets/restaurant.jpg"
-import furnitureImg from "../../../assets/furniture.jpg"
+import projectifyImg from "../../../assets/images/projectify1.jpg";
+import restaurantImg from "../../../assets/images/restaurant.jpg"
+import furnitureImg from "../../../assets/images/furniture.jpg"
 
 export const projects: Project[] = [
     {
@@ -33,9 +33,9 @@ export const projects: Project[] = [
 
 const ProjecsSection = () => {
     return (
-        <ColumnLayout>
+        <Container>
             <ProjectsContent projects={projects}/>
-        </ColumnLayout>
+        </Container>
     )
 }
 
