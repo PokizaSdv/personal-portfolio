@@ -1,11 +1,11 @@
 import "./HeaderRight.css";
-import heroImg from "../../assets/headerImg.png"
+import heroImg from "../../assets/images/headerImg.png"
 const HeaderRight = () => {
     return (
         <div className="header-right">
-            <div className="img-wrapper">
-                <img className="hero-img"  src={heroImg} alt="Woman" />
-            </div>
+            {/* <div className="img-wrapper">
+                <img className="hero-img"  src="" alt="" />
+            </div> */}
         </div>
     );
 };

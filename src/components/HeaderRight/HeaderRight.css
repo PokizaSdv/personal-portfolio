@@ -1,18 +1,12 @@
 .header-right {
-    width: 50%;
+    width: 40%;
     height: auto;
     display: flex;
     justify-content: center;
 }
 
-.img-wrapper {
-    border-top-left-radius: var(--border-radius-70);
-    border-top-right-radius: var(--border-radius-70);
-    display: flex;
-}
-
 .hero-img {
-    width: 80rem;
+    width: 60rem;
     height: auto;
     object-fit: contain;
 }
