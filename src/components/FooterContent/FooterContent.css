@@ -1,12 +1,8 @@
 .footer {
     background: var(--black);
-    /* border-top: 1px solid var(--bg-shade); */
-    padding: var(--space-48) var(--space-80);
+    padding: var(--space-16) var(--space-80);
 }
 
-/* .footer :first-child {
-    margin-right: var(--space-20);
-} */
 
 .footer-top {
     display: flex;
