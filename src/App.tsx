@@ -4,7 +4,7 @@ import { ContactSection } from "./pages/landing-page/contact-section/Contact";
 import { Footer } from "./pages/landing-page/footer-section/Footer";
 import { HeaderSection } from "./pages/landing-page/header-page/Header";
 import { NavigationBar } from "./pages/landing-page/navigation-bar/NavigationBar";
-import { ProjecsSection } from "./pages/landing-page/projects-section/Projects";
+import { ProjectsSection } from "./pages/landing-page/projects-section/Projects";
 import { ServicesSection } from "./pages/landing-page/services-section/Services";
 import { SkillsSection } from "./pages/landing-page/skills-section/Skills";
 
@@ -27,7 +27,7 @@ function App() {
                 <ServicesSection />
             </Wrapper>
 
-            <ProjecsSection />
+            <ProjectsSection />
             <ContactSection />
             <Footer />
         </>
