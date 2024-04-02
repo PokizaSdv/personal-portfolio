@@ -18,20 +18,33 @@ const AboutContent = () => {
                 </p>
             </div>
             <div className="about-left">
-                <p className="display-md">Feel free to reach out at</p>
+                <p className="display-md reach-out_title">Feel free to reach out at</p>
                 <div className="email-phone">
-                <p className="display-md">Email</p>
-                <div className="wrapper">
-                    <Icon iconName="email" />
-                    <p className="paragraph-md">pokizadev@gmail.com</p>
+                    
+                    <div className="wrapper">
+                        <Icon iconName="email" />
+                        <p className="paragraph-md">pokizadev@gmail.com</p>
+                    </div>
+                    {/* <p className="display-md">Phone</p> */}
+                    <div className="wrapper">
+                        <Icon iconName="phone" />
+                        <p className="paragraph-md">347-889-8848</p>
+                    </div>
+
+                    <div className="wrapper">
+                    <Icon iconName="github-primary" /> 
+                        <p className="paragraph-md">github.com/pokizadev</p>
+                    </div>
+
+                    <div className="wrapper">
+                    <Icon iconName="linkedin-primary" />
+                        <p className="paragraph-md">linkedin.com/in/pokizadev</p>
+                    </div>
+
+                        
+                        
+                        
                 </div>
-                <p className="display-md">Phone</p>
-                <div className="wrapper">
-                    <Icon iconName="phone" />
-                    <p className="paragraph-md">347-889-8848</p>
-                </div>
-                </div>
-                
             </div>
         </div>
     );
