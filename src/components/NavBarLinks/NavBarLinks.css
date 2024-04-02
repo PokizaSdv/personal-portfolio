@@ -4,9 +4,9 @@
     justify-content: space-between;
 }
 
-a {
+.nav-bar__links a {
     cursor: pointer;
 }
-a:hover {
+.nav-bar__links a:hover {
     color: var(--primary);
 }
