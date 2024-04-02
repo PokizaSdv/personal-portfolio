@@ -31,7 +31,7 @@ export const projects: Project[] = [
     },
 ];
 
-const ProjecsSection = () => {
+const ProjectsSection = () => {
     return (
         <Container>
             <ProjectsContent projects={projects}/>
@@ -39,4 +39,4 @@ const ProjecsSection = () => {
     )
 }
 
-export {ProjecsSection}
+export {ProjectsSection}

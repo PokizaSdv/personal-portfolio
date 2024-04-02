@@ -2,11 +2,11 @@
     width: 40%;
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: end
 }
 
 .hero-img {
-    width: 60rem;
+    width: 40rem;
     height: auto;
     object-fit: contain;
 }

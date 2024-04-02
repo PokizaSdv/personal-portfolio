@@ -1,23 +1,26 @@
 import { FooterContent } from "../../../components/FooterContent"
-import { NavBarLinkItem } from "../../../components/NavBarLinks/types";
+import { FooterLinkItem } from "../../../components/FooterContent/types";
 
-const links: NavBarLinkItem[] = [
+const links: FooterLinkItem[] = [
     {
-        linkTo: "/google.com",
+        linkTo: "",
         linkText: "Home"
     },
+
     {
-        linkTo: "/",
+        linkTo: "#portfolio",
+        linkText: "Portfolio"
+    },
+
+    {
+        linkTo: "#services",
         linkText: "Services"
     },
     {
-        linkTo: "/",
+        linkTo: "#aboutme",
         linkText: "About me"
     },
-    {
-        linkTo: "/",
-        linkText: "Projects"
-    }
+   
 ];
 
 

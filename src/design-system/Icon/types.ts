@@ -39,6 +39,8 @@ export type IconName =
     | "logo"
     | "email"
     | "phone"
+    | "github-primary"
+    | "linkedin-primary"
 
 export type IconProps = {
     iconName: IconName;

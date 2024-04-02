@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import logo from "../../assets/icons/L2775.svg";
+import logoWhite from "../../assets/icons/logo-white.svg"
 
 const StyledImg = styled.img`
     height: 6rem;
@@ -15,3 +16,13 @@ const Logo = () => {
 };
 
 export { Logo };
+
+const LogoWhite = () => {
+    return (
+        <div className="logo-wrapper">
+            <StyledImg src={logoWhite} alt="" />
+        </div>
+    );
+};
+
+export { LogoWhite };

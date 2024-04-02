@@ -4,7 +4,7 @@
     margin: 0 auto;
     gap: var(--space-32);
     text-align: center;
-    padding: var(--space-120);
+    padding: var(--space-100);
 }
 
 .contact-form {
