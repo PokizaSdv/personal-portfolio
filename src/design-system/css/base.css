@@ -24,3 +24,8 @@ li {
     list-style-type: none;
 }
 
+@media (max-width: 62.5em) {
+    html {
+        font-size: 60%;
+    }
+}

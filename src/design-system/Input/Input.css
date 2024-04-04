@@ -1,13 +1,13 @@
 .input {
     outline: none !important;
-    height: 5.6rem;
+    width: 30rem;
+    height: 5rem;
     border: 0.15rem solid var(--input);
     border-radius: var(--border-radius-8);
     padding: var(--space-16);
     font-family: inherit;
     font-size: var(--font-size-20);
     color: var(--heading);
-    width: 35rem;
     display: block;
     transition: all 0.3s;
 }
@@ -53,4 +53,10 @@ input::placeholder,
 
 .input-wrapper label {
     display: block;
+}
+
+@media (max-width: 62.5em) {
+    .input {
+        width: 100%;
+    }
 }

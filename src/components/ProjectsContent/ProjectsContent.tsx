@@ -10,14 +10,14 @@ export type ProjectsProps = {
 
 const StyledIcon = styled(Icon)`
     width: 4rem;
-    height: 4rem;
+    height: 4rem;   
 `;
 
 const ProjectsContent: React.FC<ProjectsProps> = ({ projects }) => {
     return (
         <div className="projects-content">
-            <p id="portfolio" className="display-lg">Recent Projects</p>
-            <h2 className="heading-2">My Portfolio</h2>
+            <p id="portfolio" className="display-lg">My Portfolio</p>
+            <h2 className="heading-2">Recent Projects</h2>
             <div className="projects-box">
                 {projects.map((project, idx) => {
                     return (

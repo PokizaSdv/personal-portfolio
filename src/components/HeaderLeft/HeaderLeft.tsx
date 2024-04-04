@@ -11,8 +11,7 @@ const HeaderLeft = () => {
                 </h1>
                 <p className="paragraph-lg">
                     I Offer Comprehensive Backend and Frontend Development
-                    Services. <br />
-                    Let's collaborate and turn your ideas into reality.
+                    Services. Let's collaborate and turn your ideas into reality.
                 </p>
             </div>
             <FileViewer />
