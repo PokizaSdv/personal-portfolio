@@ -21,9 +21,9 @@ export const services: Service[] = [
     },
     {
         imgUrl: design,
-        title: "UI/UX design",
+        title: "UI / UX Design",
         description:
-            "Design visually stunning interfaces that reflect your brand identity and values. Iterate quickly and collaboratively to refine and perfect your UI designs.Transforming your vision into stunning and user-friendly interfaces."
+            "Design visually stunning interfaces that reflect your brand identity and values. Iterate quickly and collaboratively to refine your UI designs. Transforming your vision into user-friendly interfaces."
     },
     {
         imgUrl: development,

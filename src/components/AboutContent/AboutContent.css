@@ -1,6 +1,6 @@
 .about-content {
     display: flex;
-    gap: var(--space-80);
+    gap: var(--space-150);
     margin-top: var(--space-84);
 }
 

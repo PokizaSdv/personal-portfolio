@@ -21,7 +21,7 @@ const ServicesContent: React.FC<ServiceProps> = ({ services }) => {
         <div className="services-content">
             <p id="services" className="display-lg">Check out my</p>
             <h2 className="heading-2">Services</h2>
-            <div className="services-box__wrapper">
+            <div className="services-box">
                 {services.map((service, idx) => {
                     return (
                         <div key={idx} className="service">
