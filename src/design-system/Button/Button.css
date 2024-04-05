@@ -1,21 +1,20 @@
-.btn-primary {
+.btn {
     border-radius: var(--border-radius-5);
+    cursor: pointer;
+    padding: var(--space-10) var(--space-36);
+}
+
+.btn-primary {
     background: var(--primary);
     color: var(--white);
-    padding: var(--space-10) var(--space-36);
     border: none;
-    cursor: pointer;
 }
 
 .btn-secondary {
     background: var(--white);
     box-shadow: var(--box-shadow-1);
-    border-radius: var(--border-radius-5);
     border: var(--space-1) solid var(--primary);
     color: var(--primary);
-    padding: var(--space-10) var(--space-36);
-    cursor: pointer;
-
 }
 
 .btn-dribble {
@@ -23,4 +22,10 @@
     background: var(--dribble);
     box-shadow: var(--box-shadow-2);
     color: var(--white);
+}
+
+@media (max-width: 75em) {
+    .btn {
+        padding: var(--space-8) var(--space-22);
+    }
 }

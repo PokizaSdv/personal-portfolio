@@ -1,8 +1,8 @@
-import { Container, NavBar, NavBarLinks } from "../../../components";
+import styled from "styled-components";
+import { NavBar, NavBarLinks } from "../../../components";
 import { NavBarLinkItem } from "../../../components/NavBarLinks/types";
-import { Button } from "../../../design-system/Button";
 
-const links: NavBarLinkItem[] = [
+export const links: NavBarLinkItem[] = [
     {
         linkTo: "google.com",
         linkText: "Home"
@@ -21,27 +21,21 @@ const links: NavBarLinkItem[] = [
     }
 ];
 
-const NavigationBar = () => {
-    const handleContactMe = () => {
-        const contactMeElement = document.getElementById("contactme");
-        if (contactMeElement) {
-            contactMeElement.scrollIntoView({ behavior: "smooth" });
-        }
-    };
+const NavBarWrapper = styled.section`
+    max-width: 144rem;
+    margin: 0 auto;
+    display: flex;
+    padding: var(--space-12) var(--space-100) var(--space-100) var(--space-100);
+    overflow: visible !important;
+`;
 
+const NavigationBar = () => {
     return (
-        <Container>
+        <NavBarWrapper>
             <NavBar>
                 <NavBarLinks links={links}></NavBarLinks>
-                <Button
-                    color="secondary"
-                    className="paragraph-md"
-                    onClick={handleContactMe}
-                >
-                    Contact Me
-                </Button>
             </NavBar>
-        </Container>
+        </NavBarWrapper>
     );
 };
 
