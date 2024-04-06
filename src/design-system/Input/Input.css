@@ -60,3 +60,14 @@ input::placeholder,
         width: 100%;
     }
 }
+
+@media (max-width: 37.5em) {
+    .input {
+        padding: var(--space-8);
+        height: auto;
+    }
+
+    .input-textarea {
+        height: var(--space-100);
+    }
+}

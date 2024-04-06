@@ -3,10 +3,19 @@ import { FooterLinkItem } from "./types";
 import React from "react";
 import { Icon } from "../../design-system/Icon";
 import { LogoWhite } from "../../design-system/Logo/Logo";
+import styled from "styled-components";
 
 type FooterProps = {
     links: FooterLinkItem[];
 };
+
+const StyledIcon = styled(Icon)`
+    @media (max-width: 62.5em) {
+        height: 2rem;
+        width: 2rem;
+        margin-right: -0.8rem;
+    }
+`
 
 const FooterContent: React.FC<FooterProps> = ({ links }) => {
     return (
@@ -33,14 +42,14 @@ const FooterContent: React.FC<FooterProps> = ({ links }) => {
                         href="https://github.com/pokizadev"
                         target="_blank"
                     >
-                        <Icon iconName="github-sq" />
+                        <StyledIcon iconName="github-sq" />
                     </a>
                     <a
                         className="footer_icon"
                         href="https://www.linkedin.com/feed/"
                         target="_blank"
                     >
-                        <Icon iconName="linkedin" />
+                        <StyledIcon iconName="linkedin" />
                     </a>
 
                     <a
@@ -48,7 +57,7 @@ const FooterContent: React.FC<FooterProps> = ({ links }) => {
                         href="https://twitter.com/Pokiza_dev"
                         target="_blank"
                     >
-                        <Icon iconName="twitterx" />
+                        <StyledIcon iconName="twitterx" />
                     </a>
 
                     <a
@@ -56,7 +65,7 @@ const FooterContent: React.FC<FooterProps> = ({ links }) => {
                         href="https://www.facebook.com/"
                         target="_blank"
                     >
-                        <Icon iconName="facebook" />
+                        <StyledIcon iconName="facebook" />
                     </a>
                 </div>
             </div>

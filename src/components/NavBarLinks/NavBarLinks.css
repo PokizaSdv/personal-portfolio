@@ -1,3 +1,19 @@
+.navbar_wrapper {
+    display: flex;
+    width: 65%;
+}
+
+.burgerIcon {
+    display: none;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .nav-bar__links {
     display: flex;
     gap: var(--space-56);
@@ -9,4 +25,36 @@
 }
 .nav-bar__links a:hover {
     color: var(--primary);
+}
+
+@media (max-width: 75em) {
+    .navbar_wrapper {
+        width: 70%;
+    }
+}
+
+@media (max-width: 65em) {
+    .navbar_wrapper {
+        width: 75%;
+    }
+}
+
+@media (max-width: 60em) {
+    .navbar_wrapper {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 44em) {
+    .navbar {
+        display: none;
+    }
+
+    .burgerIcon {
+        display: flex;
+        margin-left: auto;
+        justify-content: center;
+        margin-top: -3rem;
+    }
 }

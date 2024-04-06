@@ -1,8 +1,8 @@
-import { Container, NavBar, NavBarLinks } from "../../../components";
+import styled from "styled-components";
+import { NavBar, NavBarLinks } from "../../../components";
 import { NavBarLinkItem } from "../../../components/NavBarLinks/types";
-import { Button } from "../../../design-system/Button";
 
-const links: NavBarLinkItem[] = [
+export const links: NavBarLinkItem[] = [
     {
         linkTo: "google.com",
         linkText: "Home"
@@ -21,27 +21,29 @@ const links: NavBarLinkItem[] = [
     }
 ];
 
-const NavigationBar = () => {
-    const handleContactMe = () => {
-        const contactMeElement = document.getElementById("contactme");
-        if (contactMeElement) {
-            contactMeElement.scrollIntoView({ behavior: "smooth" });
-        }
-    };
+const NavBarWrapper = styled.section`
+    max-width: 144rem;
+    margin: 0 auto;
+    display: flex;
+    padding: var(--space-12) var(--space-100) var(--space-100) var(--space-100);
+    overflow: visible !important;
 
+    @media (max-width: 75em) {
+    padding: var(--space-12) var(--space-80) var(--space-60) var(--space-80);    
+    }
+
+    @media (max-width: 62.5em) {
+    padding: var(--space-12) var(--space-64) var(--space-42) var(--space-64);    
+    }
+`;
+
+const NavigationBar = () => {
     return (
-        <Container>
+        <NavBarWrapper>
             <NavBar>
                 <NavBarLinks links={links}></NavBarLinks>
-                <Button
-                    color="secondary"
-                    className="paragraph-md"
-                    onClick={handleContactMe}
-                >
-                    Contact Me
-                </Button>
             </NavBar>
-        </Container>
+        </NavBarWrapper>
     );
 };
 

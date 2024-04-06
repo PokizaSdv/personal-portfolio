@@ -1,3 +1,4 @@
+import styled from "styled-components";
 import { Container, HeaderLeft, HeaderRight } from "../../../components";
 
 const HeaderSection = () => {

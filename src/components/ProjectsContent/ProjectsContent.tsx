@@ -10,7 +10,13 @@ export type ProjectsProps = {
 
 const StyledIcon = styled(Icon)`
     width: 4rem;
-    height: 4rem;   
+    height: 4rem;  
+    
+    @media (max-width: 62.5em) {
+        width: 3rem;
+        height: 3rem;
+        margin-right: -1rem;
+    }
 `;
 
 const ProjectsContent: React.FC<ProjectsProps> = ({ projects }) => {

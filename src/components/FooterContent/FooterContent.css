@@ -3,7 +3,6 @@
     padding: var(--space-16) var(--space-80);
 }
 
-
 .footer-top {
     display: flex;
     justify-content: space-between;
@@ -46,5 +45,22 @@
 }
 .footer_icon:hover {
     cursor: pointer;
-    transform: translateY(-7px);    
+    transform: translateY(-7px);
+}
+
+@media (max-width: 62.5em) {
+    .footer__links {
+        margin-left: var(--space-56);
+    }
+}
+
+@media (max-width: 37.5em) {
+    .footer__icons-wrapper {
+        display: none;
+    }
+
+    .footer__links {
+        gap: var(--space-16);
+        margin-left: var(--space-32);
+    }
 }

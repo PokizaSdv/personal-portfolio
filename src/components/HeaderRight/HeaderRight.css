@@ -2,11 +2,25 @@
     width: 40%;
     height: auto;
     display: flex;
-    justify-content: end
+    justify-content: end;
 }
 
 .hero-img {
     width: 40rem;
     height: auto;
     object-fit: contain;
+}
+
+@media (max-width: 56em) {
+    .header-right {
+        width: 100%;
+        display: block;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .header-text {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
