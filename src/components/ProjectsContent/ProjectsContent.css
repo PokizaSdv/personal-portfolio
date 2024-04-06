@@ -1,7 +1,11 @@
+#portfolio {
+    margin-bottom: -2rem;
+}
+
 .projects-content {
     display: flex;
     flex-direction: column;
-    gap: var(--space-22);
+    gap: var(--space-40);
 }
 
 .projects-box {
@@ -69,5 +73,19 @@
     .project_text {
         height: auto;
         padding-bottom: var(--space-12);
+    }
+}
+
+@media (max-width: 37.5em) {
+    .project {
+        flex-wrap: wrap;
+    }
+
+    .project-img {
+        width: 100%;
+    }
+
+    .project_text {
+        width: 100%;
     }
 }

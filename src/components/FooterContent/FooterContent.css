@@ -53,3 +53,14 @@
         margin-left: var(--space-56);
     }
 }
+
+@media (max-width: 37.5em) {
+    .footer__icons-wrapper {
+        display: none;
+    }
+
+    .footer__links {
+        gap: var(--space-16);
+        margin-left: var(--space-32);
+    }
+}

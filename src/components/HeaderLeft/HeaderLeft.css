@@ -1,5 +1,5 @@
 .header-left {
-    width: 60%;
+    width: 55%;
 }
 
 .content {
@@ -12,4 +12,13 @@
 
 span {
     color: var(--primary);
+}
+
+@media (max-width: 56em) {
+    .header-left {
+        width: 100%;
+        display: block;
+        text-align: center;
+        justify-content: center;
+    }
 }

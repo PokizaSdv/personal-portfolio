@@ -1,7 +1,10 @@
+#services {
+    margin-bottom: -3rem;
+}
 .services-content {
     display: flex;
     flex-direction: column;
-    gap: var(--space-22);
+    gap: var(--space-48);
 }
 
 .services-box {
@@ -20,7 +23,6 @@
     display: flex;
     flex-direction: column;
     gap: var(--space-22);
-
 }
 
 .img-wrapper {
@@ -38,12 +40,20 @@
     color: darkgray;
 }
 
-
 @media screen and (max-width: 75em) {
     .services-box {
         flex-wrap: wrap;
     }
     .service {
         width: calc((100% - var(--space-32)) / 2);
+    }
+}
+
+@media screen and (max-width: 37.5em) {
+    .services-box {
+        flex-wrap: wrap;
+    }
+    .service {
+        width: 100%;
     }
 }

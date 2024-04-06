@@ -27,6 +27,14 @@ const NavBarWrapper = styled.section`
     display: flex;
     padding: var(--space-12) var(--space-100) var(--space-100) var(--space-100);
     overflow: visible !important;
+
+    @media (max-width: 75em) {
+    padding: var(--space-12) var(--space-80) var(--space-60) var(--space-80);    
+    }
+
+    @media (max-width: 62.5em) {
+    padding: var(--space-12) var(--space-64) var(--space-42) var(--space-64);    
+    }
 `;
 
 const NavigationBar = () => {

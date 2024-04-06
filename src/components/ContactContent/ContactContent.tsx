@@ -27,7 +27,7 @@ const ContactContent = () => {
         <div className="contact__content">
             <h2 id="contactme" className="heading-2">Contact Me</h2>
             <p className="paragraph-md">
-                Interested in working together or just have a question? <br />Let's
+                Interested in working together or just have a question? Let's
                 connect and make things happen.
             </p>
             <form className="contact-form">
