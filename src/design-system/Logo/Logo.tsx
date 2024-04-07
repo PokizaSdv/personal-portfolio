@@ -1,6 +1,14 @@
 import styled from "styled-components";
 import logo from "../../assets/icons/L2775.svg";
-import logoWhite from "../../assets/icons/logo-white.svg"
+import logoWhite from "../../assets/icons/logo-white.svg";
+
+const StyledImg0 = styled.img`
+    height: 6rem;
+    width: 6rem;
+    position: absolute;
+    top: 6.5%;
+    left: 8.5%;
+`;
 
 const StyledImg = styled.img`
     height: 6rem;
@@ -8,13 +16,23 @@ const StyledImg = styled.img`
 `;
 
 const StyledImg2 = styled.img`
- height: 6rem;
+    height: 6rem;
     width: 6rem;
 
     @media (max-width: 22em) {
         display: none;
     }
-`
+`;
+
+const Logo0 = () => {
+    return (
+        <div className="logo-wrapper">
+            <StyledImg0 src={logo} alt="" />
+        </div>
+    );
+};
+
+export { Logo0 };
 
 const Logo = () => {
     return (

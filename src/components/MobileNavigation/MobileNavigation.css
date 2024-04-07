@@ -1,18 +1,24 @@
 .mobile-navigation {
-    position: absolute;
-    top: -13%;
-    right: -10rem;
+    width: 108vw;
+    position: fixed;
+    top: 0;
+    right: -5%;
     /* background-color: linear-gradient(to bottom, #f1fcff, #ffffff); */
     background-color: var(--white);
     /* border-left: 1px solid #ccc; */
     padding: var(--space-130) var(--space-100) var(--space-56) var(--space-56);
     display: block;
+
+    
+    z-index: 10;
 }
 
 .mobile-nav__links {
     display: flex;
     flex-direction: column;
     gap: var(--space-42);
+    padding-top: var(--space-32);
+    border-top: 1px solid #ccc;
 }
 
 .mobile-nav__links a {
