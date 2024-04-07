@@ -55,11 +55,12 @@ input::placeholder,
     display: block;
 }
 
-@media (max-width: 62.5em) {
-    .input {
-        width: 100%;
+/* @media (max-width: 62.5em) {
+    .input-textarea {
+        width: 95%;
+        margin: 0 auto;
     }
-}
+} */
 
 @media (max-width: 37.5em) {
     .input {
