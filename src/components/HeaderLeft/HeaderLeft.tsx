@@ -4,7 +4,7 @@ import { FileViewer } from "../FileViewer";
 const HeaderLeft = () => {
     return (
         <div className="header-left">
-            <div className="content">
+            <div className="header__content">
                 <p className="display-lg">Hello, It is Pokiza</p>
                 <h1 className="heading-1 ">
                     I am a <span>Fullstack</span> <br /> Software Engineer

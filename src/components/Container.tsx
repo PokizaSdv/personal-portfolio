@@ -13,10 +13,16 @@ export const Container = styled.section`
     }
 
     @media (max-width: 62.5em) {
-    padding: var(--space-12) var(--space-64) var(--space-64) var(--space-64);    
+    padding: var(--space-12) var(--space-64) var(--space-72) var(--space-64);    
     }
 
-    @media (max-width: 56rem) {
-        flex-wrap: wrap;
+    @media (max-width: 56em) {
+        padding: var(--space-12) var(--space-48) var(--space-72) var(--space-48);
     }
+
+    @media (max-width: 45em) {
+        padding: var(--space-12) var(--space-32) var(--space-64) var(--space-32);
+    }
+
+
 `;

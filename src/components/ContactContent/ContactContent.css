@@ -7,10 +7,16 @@
     padding: var(--space-80);
 }
 
+.contact-text {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: var(--space-32);
+    margin: 0 auto;
 }
 
 .two-inputs__wrapper {

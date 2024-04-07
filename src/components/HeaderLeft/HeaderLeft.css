@@ -2,7 +2,7 @@
     width: 55%;
 }
 
-.content {
+.header__content {
     display: flex;
     flex-direction: column;
     gap: var(--space-22);
@@ -18,7 +18,11 @@ span {
     .header-left {
         width: 100%;
         display: block;
-        text-align: center;
-        justify-content: center;
+        text-align: start;
+        margin-left: var(--space-22);
     }
+
+    .header__content {
+        margin-bottom: var(--space-48);
+    } 
 }

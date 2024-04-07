@@ -35,6 +35,10 @@ const NavBarWrapper = styled.section`
     @media (max-width: 62.5em) {
     padding: var(--space-12) var(--space-64) var(--space-42) var(--space-64);    
     }
+
+    @media (max-width: 56em) {
+        padding: var(--space-12) var(--space-48) var(--space-48) var(--space-48);
+    }
 `;
 
 const NavigationBar = () => {

@@ -81,14 +81,14 @@
 }
 
 .paragraph-lg {
-    font-size: var(--font-size-18);
+    font-size: var(--font-size-20);
 }
 .paragraph-md {
-    font-size: var(--font-size-16);
+    font-size: var(--font-size-18);
 }
 
 .paragraph-sm {
-    font-size: var(--font-size-14);
+    font-size: var(--font-size-16);
 }
 
 .button-text-white,
