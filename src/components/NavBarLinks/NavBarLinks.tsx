@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { NavBarLinkItem } from "./types";
 import { Button } from "../../design-system/Button";
 import burgerIcon from "../../assets/icons/burger.svg";
-import closeIcon from "../../assets/icons/close-1.svg";
+import closeIcon from "../../assets/icons/close-3.svg";
 import "./NavBarLinks.css";
 import { MobileNavigation } from "../MobileNavigation";
 
@@ -12,12 +12,10 @@ type NavBarLinksProps = {
 };
 
 const StyledImg = styled.img`
-    width: 5rem;
-    height: 5rem;
-    position: absolute;
+    width: 4rem;
+    height: 4rem;
     z-index: 999;
-    display: flex;
-    text-align: center;
+    margin-top: 2.5rem;
 `;
 
 const NavBarLinks: React.FC<NavBarLinksProps> = ({ links }) => {
