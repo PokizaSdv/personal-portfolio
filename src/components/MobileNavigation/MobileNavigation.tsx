@@ -6,6 +6,7 @@ import portfolioIcon from "../../assets/icons/portfolio.svg"
 
 import "./MobileNavigation.css";
 import styled from "styled-components"
+import { Logo, Logo0 } from "../../design-system/Logo/Logo"
 
 
 export const links = [
@@ -45,6 +46,7 @@ const StyledImg = styled.img`
 const MobileNavigation = () => {
     return (
         <div className="mobile-navigation">
+            <Logo0/>
             <ul className="mobile-nav__links">
                 {links.map((link, idx) => {
                     return (
@@ -52,7 +54,7 @@ const MobileNavigation = () => {
                             <StyledImg src={link.icon} alt="icon"/>
                             <a
                                 href={link.linkTo}
-                                className="mobile-nav__link paragraph-lg"
+                                className="mobile-nav__link display-lg"
                             >
                                 {link.linkText}
                             </a>

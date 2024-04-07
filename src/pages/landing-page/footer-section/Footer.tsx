@@ -1,4 +1,4 @@
-import { FooterContent } from "../../../components/FooterContent"
+import { FooterContent } from "../../../components/FooterContent";
 import { FooterLinkItem } from "../../../components/FooterContent/types";
 
 const links: FooterLinkItem[] = [
@@ -19,16 +19,11 @@ const links: FooterLinkItem[] = [
     {
         linkTo: "#aboutme",
         linkText: "About me"
-    },
-   
+    }
 ];
 
-
 const Footer = () => {
-    return (
-        <FooterContent links={links} />
-            
-    )
-}
+    return <FooterContent links={links} />;
+};
 
-export {Footer}
+export { Footer };

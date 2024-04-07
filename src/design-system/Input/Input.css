@@ -1,6 +1,5 @@
 .input {
     outline: none !important;
-    width: 30rem;
     height: 5rem;
     border: 0.15rem solid var(--input);
     border-radius: var(--border-radius-8);
@@ -54,13 +53,6 @@ input::placeholder,
 .input-wrapper label {
     display: block;
 }
-
-/* @media (max-width: 62.5em) {
-    .input-textarea {
-        width: 95%;
-        margin: 0 auto;
-    }
-} */
 
 @media (max-width: 37.5em) {
     .input {

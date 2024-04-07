@@ -37,7 +37,11 @@ const NavBarWrapper = styled.section`
     }
 
     @media (max-width: 56em) {
-        padding: var(--space-12) var(--space-48) var(--space-48) var(--space-48);
+        padding: var(--space-12) var(--space-48) var(--space-12) var(--space-48);
+    }
+
+    @media (max-width: 45em) {
+        padding: var(--space-12) var(--space-32) var(--space-12) var(--space-32);
     }
 `;
 

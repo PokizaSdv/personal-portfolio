@@ -25,8 +25,10 @@ const ContactContent = () => {
 
     return (
         <div className="contact__content">
-            <h2 id="contactme" className="heading-2">Contact Me</h2>
-            <p className="paragraph-md contact-text" >
+            <h2 id="contactme" className="heading-2">
+                Contact Me
+            </h2>
+            <p className="paragraph-md contact-text">
                 Interested in working together or just have a question? Let's
                 connect and make things happen.
             </p>
@@ -57,14 +59,16 @@ const ContactContent = () => {
                         onChange={onChangePhoneNumber}
                     />
                 </div>
-                <Input
-                    type="textarea"
-                    labelText="Message"
-                    value=""
-                    onChange={() => {}}
-                    placeholder="Type your message"
-                />
-                 <div className="actions">
+                <div className="textarea-wrapper">
+                    <Input
+                        type="textarea"
+                        labelText="Message"
+                        value=""
+                        onChange={() => {}}
+                        placeholder="Type your message"
+                    />
+                </div>
+                <div className="actions">
                     <Button color="primary" className="paragraph-md">
                         Submit
                     </Button>

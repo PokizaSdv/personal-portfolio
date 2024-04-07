@@ -8,7 +8,7 @@
 }
 
 .contact-text {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -23,4 +23,34 @@
     display: flex;
     gap: var(--space-32);
     justify-content: center;
+}
+
+@media (max-width: 37.5em) {
+    .contact__content {
+        padding: 0;
+    }
+
+    .contact-text {
+        width: 65%;
+    }
+
+    .two-inputs__wrapper {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 23.43em) {
+    .textarea-wrapper {
+        padding-left: 25%;
+        padding-right: 25%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 21em) {
+    .textarea-wrapper {
+        padding-left: 10%;
+        padding-right: 10%;
+        margin: 0 auto;
+    }
 }
