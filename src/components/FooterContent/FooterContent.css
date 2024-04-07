@@ -1,6 +1,6 @@
 .footer {
     background: var(--black);
-    padding: var(--space-16) var(--space-80);
+    padding: var(--space-16) var(--space-100);
 }
 
 .footer-top {
@@ -64,3 +64,37 @@
         margin-left: var(--space-32);
     }
 }
+
+@media (max-width: 75em) {
+    .footer {
+        padding-left: var(--space-80);
+        padding-right: var(--space-80);
+    }
+}
+
+@media (max-width: 62.5em) {
+    .footer {
+        padding-left: var(--space-64);
+        padding-right: var(--space-64);
+    }
+}
+
+@media (max-width: 56em) {
+    .footer {
+        padding-left: var(--space-48);
+        padding-right: var(--space-48);
+    }
+}
+
+@media (max-width: 45em) {
+    .footer {
+        padding-left: var(--space-32);
+        padding-right: var(--space-32);
+    }
+
+    .footer__links {
+        margin-left: var(--space-22);
+    }
+}
+
+

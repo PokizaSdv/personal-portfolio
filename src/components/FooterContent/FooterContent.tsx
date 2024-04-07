@@ -15,7 +15,9 @@ const StyledIcon = styled(Icon)`
         width: 2rem;
         margin-right: -0.8rem;
     }
-`
+`;
+
+
 
 const FooterContent: React.FC<FooterProps> = ({ links }) => {
     return (

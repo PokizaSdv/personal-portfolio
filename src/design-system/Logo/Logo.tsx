@@ -7,6 +7,15 @@ const StyledImg = styled.img`
     width: 6rem;
 `;
 
+const StyledImg2 = styled.img`
+ height: 6rem;
+    width: 6rem;
+
+    @media (max-width: 22em) {
+        display: none;
+    }
+`
+
 const Logo = () => {
     return (
         <div className="logo-wrapper">
@@ -20,7 +29,7 @@ export { Logo };
 const LogoWhite = () => {
     return (
         <div className="logo-wrapper">
-            <StyledImg src={logoWhite} alt="" />
+            <StyledImg2 src={logoWhite} alt="" />
         </div>
     );
 };

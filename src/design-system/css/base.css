@@ -35,3 +35,9 @@ li {
         font-size: 50%;
     }
 }
+
+@media (max-width: 52em) {
+    html {
+        font-size: 40%;
+    }
+}

@@ -18,11 +18,15 @@ span {
     .header-left {
         width: 100%;
         display: block;
-        text-align: start;
-        margin-left: var(--space-22);
+        text-align: center;
     }
 
     .header__content {
         margin-bottom: var(--space-48);
     } 
+    
+    .header-text {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
