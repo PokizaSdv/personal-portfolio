@@ -10,7 +10,7 @@
 }
 
 .label.label-disabled {
-    color: var(--body);
+    color: var(--input);
 }
 
 .hint-message {

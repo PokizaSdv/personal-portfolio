@@ -11,6 +11,7 @@ export type InputProps = {
     error?: boolean;
     hintMessage?: string;
     labelText?: string;
+    name?: string 
 
     onChange: (value: string) => void;
     value: string;
