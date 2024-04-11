@@ -17,7 +17,8 @@ const Input: React.FC<InputProps> = (props) => {
         labelText,
         className,
         onChange,
-        value
+        value,
+        name
     } = props;
 
 
@@ -27,7 +28,7 @@ const Input: React.FC<InputProps> = (props) => {
     const finalClassNames = trimWhiteSpaces(
         `input ${
             className || ""
-        } $${errorClassName} ${textareaClassName}`
+        } ${errorClassName} ${textareaClassName}`
     );
 
     const hintMessageClass = trimWhiteSpaces(`hint-message ${error ? "hint-message--error" : ""}`);
@@ -56,6 +57,7 @@ const Input: React.FC<InputProps> = (props) => {
                     id={id}
                     onChange={handleOnChange}
                     value={value}
+                    name={name}
                 />
             ) : (
                 <input
@@ -66,6 +68,7 @@ const Input: React.FC<InputProps> = (props) => {
                     id={id}
                     onChange={handleOnChange}
                     value={value}
+                    name={name}
                 />
             )}
 

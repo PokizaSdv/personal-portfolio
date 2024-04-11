@@ -30,17 +30,17 @@ input::placeholder,
     border: 0.15rem solid var(--primary);
 }
 
-.input-error {
+.input.input-error {
     border: 0.15rem solid var(--dribble);
 }
 
 .input:disabled {
-    border-color: var(--gray);
+    border-color: var(--body);
     background-color: var(--white);
 }
 
 .input:disabled::placeholder {
-    color: var(--gray);
+    color: var(--heading);
 }
 
 .input-wrapper {
