@@ -7,7 +7,7 @@ const StyledImg0 = styled.img`
     width: 6rem;
     position: absolute;
     top: 6%;
-    left: 9.5%;
+    left: 9%;
 `;
 
 const StyledImg = styled.img`
