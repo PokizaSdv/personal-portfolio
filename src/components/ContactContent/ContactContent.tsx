@@ -1,9 +1,10 @@
 import { useState, useRef } from "react";
-import  emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
 import { Input } from "../../design-system/Input";
 import "./ContactContent.css";
 import { Button } from "../../design-system/Button";
+import { validateEmail } from "../../utils";
 
 const ContactContent = () => {
     const [firstName, setFirstName] = useState("");
@@ -11,6 +12,7 @@ const ContactContent = () => {
     const [email, setEmail] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
     const [message, setMessage] = useState("");
+    const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
     const form = useRef<HTMLFormElement | null>(null);
 
@@ -32,10 +34,11 @@ const ContactContent = () => {
     };
 
     const onChangeMessage = (value: string) => {
-        setMessage(value)
-    }
+        setMessage(value);
+    };
 
-    const isFormSubmittable = firstName && lastName && email && phoneNumber && message;
+    const isFormSubmittable =
+        firstName && lastName && email && phoneNumber && message;
 
     const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID || "";
     const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID || "";
@@ -47,6 +50,35 @@ const ContactContent = () => {
         setIsFormSubmitting(true);
 
         if (form.current) {
+            if (firstName.length < 2) {
+                setIsFormSubmitting(false);
+                setIsError(true);
+                toast.error("Invalid First Name");
+                return;
+            }
+
+            if (lastName.length < 2) {
+                setIsFormSubmitting(false);
+                setIsError(true);
+                toast.error("Invalid Last Name");
+                return;
+            }
+
+            if (!validateEmail(email)) {
+                setIsFormSubmitting(false);
+                setIsError(true);
+                toast.error("Invalid Email");
+                return;
+            }
+
+            if (phoneNumber.length < 10) {
+                setIsFormSubmitting(false);
+                setIsError(true);
+                toast.error("Invalid Phone Number");
+                return;
+            }
+
+
             emailjs
                 .sendForm(serviceId, templateId, form.current, {
                     publicKey: publicKey
@@ -61,7 +93,7 @@ const ContactContent = () => {
                         setFirstName("");
                         setLastName("");
                         setEmail("");
-                        setPhoneNumber("")
+                        setPhoneNumber("");
                         setMessage("");
                     },
                     () => {
@@ -91,13 +123,25 @@ const ContactContent = () => {
                         value={firstName}
                         onChange={onChangeFirstName}
                         name="firstName"
+                        hintMessage={
+                            firstName.length <= 2 && firstName.length > 0
+                                ? "Invalid First Name"
+                                : ""
+                        }
+                        error={firstName.length <= 2 && firstName.length > 0}
                     />
+
                     <Input
                         labelText="Last Name"
                         value={lastName}
                         onChange={onChangeLastName}
                         name="lastName"
-
+                        hintMessage={
+                            lastName.length <= 1 && lastName.length > 0
+                                ? "Invalid Last Name"
+                                : ""
+                        }
+                        error={lastName.length <= 1 && lastName.length > 0}
                     />
                 </div>
                 <div className="two-inputs__wrapper">
@@ -107,14 +151,27 @@ const ContactContent = () => {
                         value={email}
                         name="email"
                         onChange={onChangeEmail}
+                        hintMessage={
+                            email.length <= 2 && email.length > 0
+                                ? "Invalid Email"
+                                : ""
+                        }
+                        error={email.length <= 2 && email.length > 0}
                     />
                     <Input
                         type="tel"
                         labelText="Phone Number"
                         value={phoneNumber}
                         name="phoneNumber"
-
                         onChange={onChangePhoneNumber}
+                        hintMessage={
+                            phoneNumber.length < 10 && phoneNumber.length > 0
+                                ? "Invalid Phone Number"
+                                : ""
+                        }
+                        error={
+                            phoneNumber.length < 10 && phoneNumber.length > 0
+                        }
                     />
                 </div>
                 <div className="textarea-wrapper">
@@ -125,14 +182,24 @@ const ContactContent = () => {
                         name="message"
                         onChange={onChangeMessage}
                         placeholder="Type your message"
+                        error={!message && isFormSubmitted}
+                        hintMessage={
+                            !message && isFormSubmitted
+                                ? "Your message is required"
+                                : ""
+                        }
                     />
                 </div>
                 <div className="actions">
-                    <Button color="primary" className="paragraph-md" disabled={isFormSubmitting || !isFormSubmittable}>
+                    <Button
+                        color="primary"
+                        className="paragraph-md"
+                        disabled={isFormSubmitting || !isFormSubmittable}
+                    >
                         Submit
                     </Button>
                 </div>
-                <Toaster/>
+                <Toaster />
             </form>
         </div>
     );

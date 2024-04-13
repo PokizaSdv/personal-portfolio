@@ -1,5 +1,6 @@
 .mobile-navigation {
-    width: 108vw;
+    width: 48vh;
+    height: 108vh;
     position: fixed;
     top: 0;
     right: -5%;
@@ -17,7 +18,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--space-42);
-    padding-top: var(--space-32);
+    padding-top: var(--space-48);
     border-top: 1px solid #ccc;
 }
 
