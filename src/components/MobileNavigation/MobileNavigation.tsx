@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import aboutIcon from "../../assets/icons/about.svg"
 import serviceIcon from "../../assets/icons/service.svg"
 import homeIcon from "../../assets/icons/home.svg"
@@ -6,13 +7,12 @@ import portfolioIcon from "../../assets/icons/portfolio.svg"
 
 import "./MobileNavigation.css";
 import styled from "styled-components"
-import { Logo, Logo0 } from "../../design-system/Logo/Logo"
 
 
 export const links = [
     {   
         icon: homeIcon,
-        linkTo: "google.com",
+        linkTo: "#top-page",
         linkText: "Home"
     },
     {
@@ -32,7 +32,7 @@ export const links = [
     },
     {
         icon: contactIcon,
-        linkto: "#contactme",
+        linkTo: "#contactme",
         linkText: "Contact"
     }
 ];
@@ -46,7 +46,7 @@ const StyledImg = styled.img`
 const MobileNavigation = () => {
     return (
         <div className="mobile-navigation">
-            <Logo0/>
+            {/* <Logo0/> */}
             <ul className="mobile-nav__links">
                 {links.map((link, idx) => {
                     return (

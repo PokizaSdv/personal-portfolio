@@ -8,7 +8,7 @@ type NavBarProps = {
 
 const NavBar: React.FC<NavBarProps> = ({children}) => {
     return (
-        <div className="navigation-bar">
+        <div id="top-page" className="navigation-bar">
             <Logo/>
             {children}
         </div>

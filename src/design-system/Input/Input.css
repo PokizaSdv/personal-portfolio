@@ -36,7 +36,7 @@ input::placeholder,
 
 .input:disabled {
     border-color: var(--body);
-    background-color: var(--white);
+    background-color: var(--primary-2);
 }
 
 .input:disabled::placeholder {

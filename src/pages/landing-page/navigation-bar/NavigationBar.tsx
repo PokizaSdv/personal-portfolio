@@ -25,6 +25,8 @@ const NavBarWrapper = styled.section`
     max-width: 144rem;
     margin: 0 auto;
     display: flex;
+    position: relative;
+
     padding: var(--space-12) var(--space-100) var(--space-100) var(--space-100);
     overflow: visible !important;
 

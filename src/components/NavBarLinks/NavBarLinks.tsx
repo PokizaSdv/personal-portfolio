@@ -15,7 +15,17 @@ const StyledImg = styled.img`
     width: 4rem;
     height: 4rem;
     z-index: 999;
-    margin-top: 2.5rem;
+    margin-top: 3rem;
+    margin-right: 5rem;
+    /* position: fixed; */
+`;
+const StyledImg2 = styled.img`
+    width: 4rem;
+    height: 4rem;
+    z-index: 999;
+    margin-top: 1rem;
+    margin-right: 14rem;
+    position: fixed;
 `;
 
 const NavBarLinks: React.FC<NavBarLinksProps> = ({ links }) => {
@@ -58,7 +68,7 @@ const NavBarLinks: React.FC<NavBarLinksProps> = ({ links }) => {
             </div>
             <div className="burgerIcon" onClick={handleOnClick}>
                 {showMenu ? (
-                    <StyledImg src={closeIcon} alt="close icon" />
+                    <StyledImg2 src={closeIcon} alt="close icon" />
                 ) : (
                     <StyledImg src={burgerIcon} alt="burger icon" />
                 )}
