@@ -17,7 +17,12 @@ const StyledImg = styled.img`
     z-index: 999;
     margin-top: 3rem;
     margin-right: 5rem;
-    /* position: fixed; */
+
+    @media (max-width: 25em) {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 3rem;
+    }
 `;
 const StyledImg2 = styled.img`
     width: 4rem;
@@ -26,6 +31,13 @@ const StyledImg2 = styled.img`
     margin-top: 1rem;
     margin-right: 14rem;
     position: fixed;
+
+    @media (max-width: 25em) {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-top: 2rem;
+        margin-right: 8rem;
+    }
 `;
 
 const NavBarLinks: React.FC<NavBarLinksProps> = ({ links }) => {
