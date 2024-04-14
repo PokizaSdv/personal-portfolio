@@ -10,7 +10,6 @@
     padding: var(--space-130) var(--space-100) var(--space-56) var(--space-56);
     display: block;
 
-    
     z-index: 10;
 }
 
@@ -31,4 +30,12 @@
 
 .mobile-nav__link-item {
     display: inline-flex;
+}
+
+@media (max-width: 25em) {
+    .mobile-navigation {
+        width: 28vh;
+        padding: var(--space-100) var(--space-80) var(--space-32)
+            var(--space-32);
+    }
 }
