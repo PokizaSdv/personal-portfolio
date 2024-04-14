@@ -7,6 +7,7 @@ import { Button } from "../../design-system/Button";
 import { validateEmail } from "../../utils";
 
 const ContactContent = () => {
+    const letters = "abcdefghijjklmnopqrstuvwxyz"
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
@@ -165,7 +166,7 @@ const ContactContent = () => {
                         name="phoneNumber"
                         onChange={onChangePhoneNumber}
                         hintMessage={
-                            phoneNumber.length < 10 && phoneNumber.length > 0
+                            (phoneNumber.length < 10 && phoneNumber.length > 0 && phoneNumber.includes(letters))
                                 ? "Invalid Phone Number"
                                 : ""
                         }

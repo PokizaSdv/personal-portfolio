@@ -48,16 +48,19 @@ input::placeholder,
     flex-direction: column;
     gap: 4px;
     align-items: flex-start;
+
 }
 
 .input-wrapper label {
     display: block;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 25em) {
     .input {
         padding: var(--space-8);
         height: auto;
+        
+        
     }
 
     .input-textarea {
