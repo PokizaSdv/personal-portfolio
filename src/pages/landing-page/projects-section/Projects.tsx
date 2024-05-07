@@ -11,7 +11,7 @@ export const projects: Project[] = [
         title: "Projectify App",
         description: "Web-based project management platform. Your website is the cornerstone of your online presence. At our agency, we specialize in creating web masterpieces that stand out from the crowd. Our team of expert designers and developers will work closely with you to create a website that not only looks great but also performs at its best.", 
         githubLink: "https://github.com/pokizadev/projectify-app-ui",
-        demoLink: "https://www.figma.com/file/e0MYFWFazJ2ImXcjoNm372/Projectify?type=design&node-id=3-178&mode=design&t=CTnHBBT3Dr8OJ02S-0"
+        demoLink: "https://projectify-app-ui-7hs3.onrender.com"
     },
     {
         imgUrl: restaurantImg,
