@@ -1,14 +1,28 @@
 .header-right {
-    width: 40%;
+    width: 55%;
     height: auto;
     display: flex;
-    justify-content: end;
+    margin-right: -10rem;
 }
 
 .hero-img {
-    width: 40rem;
+    width: 60rem;
     height: auto;
     object-fit: contain;
+    margin-top: -1.5rem;
+}
+
+@media (max-width: 81.25em) {
+    .hero-img {
+        width: 50rem;
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 75em) {
+    .hero-img {
+        width: 45rem;
+    }
 }
 
 @media (max-width: 56em) {
@@ -17,5 +31,6 @@
         display: block;
         text-align: center;
         justify-content: center;
+        margin-top: 6rem;
     }
 }
