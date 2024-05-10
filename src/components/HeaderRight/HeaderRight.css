@@ -15,22 +15,28 @@
 @media (max-width: 81.25em) {
     .hero-img {
         width: 50rem;
-        margin-top: 4rem;
     }
 }
 
 @media (max-width: 75em) {
     .hero-img {
         width: 45rem;
+        margin-top: 3rem;
     }
 }
 
+@media (max-width: 68.75em) {
+    .header-right {
+        width: 45%;
+        margin-right: 0;
+    }
+}
 @media (max-width: 56em) {
     .header-right {
         width: 100%;
         display: block;
         text-align: center;
         justify-content: center;
-        margin-top: 6rem;
+        margin-top: 4rem;
     }
 }
