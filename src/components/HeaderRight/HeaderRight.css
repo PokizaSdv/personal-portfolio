@@ -16,9 +16,6 @@
     .hero-img {
         width: 50rem;
     }
-    .header-right {
-        margin-left: 6rem;
-    }
 }
 
 @media (max-width: 75em) {
@@ -30,7 +27,7 @@
 
 @media (max-width: 68.75em) {
     .header-right {
-        margin-left: 0;
+        width: 45%;
         margin-right: 0;
     }
 }
@@ -40,6 +37,6 @@
         display: block;
         text-align: center;
         justify-content: center;
-        margin-top: 5rem;
+        margin-top: 4rem;
     }
 }

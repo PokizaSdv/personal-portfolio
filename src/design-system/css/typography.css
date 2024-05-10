@@ -56,7 +56,6 @@
     line-height: var(--line-height-14);
 }
 
-
 .display-lg,
 .display-md {
     font-weight: var(--font-weight-500);
@@ -122,9 +121,15 @@
     text-align: inherit;
 }
 
+@media (max-width: 68.75em) {
+    .heading-1 {
+        font-size: var(--font-size-60);
+        line-height: var(--line-height-10);
+    }
+}
+
 @media (max-width: 62.5em) {
     .heading-1 {
-    font-size: var(--font-size-60);
-
+        font-size: var(--font-size-60);
     }
 }

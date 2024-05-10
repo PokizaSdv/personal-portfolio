@@ -16,11 +16,11 @@ const StyledImg = styled.img`
     height: 4rem;
     z-index: 999;
     margin-top: 3rem;
-    margin-right: 5rem;
+    margin-right: 3rem;
 
-    @media (max-width: 25em) {
-        width: 2.5rem;
-        height: 2.5rem;
+    @media (max-width: 32em) {
+        width: 3rem;
+        height: 3rem;
         margin-right: 0;
     }
 `;
@@ -32,9 +32,9 @@ const StyledImg2 = styled.img`
     margin-right: 14rem;
     position: fixed;
 
-    @media (max-width: 25em) {
-        width: 2.5rem;
-        height: 2.5rem;
+    @media (max-width: 32em) {
+        width: 3rem;
+        height: 3rem;
         margin-top: 2rem;
         margin-right: 8rem;
     }

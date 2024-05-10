@@ -6,7 +6,7 @@ const HeaderLeft = () => {
         <div className="header-left">
             <div className="header__content">
                 <p className="display-lg">Hello, It is Pokiza</p>
-                <h1 className="heading-1 ">
+                <h1 className="heading-1">
                     I am a <span>Fullstack</span> <br /> Software Engineer
                 </h1>
                 <p className="paragraph-lg header-text">
