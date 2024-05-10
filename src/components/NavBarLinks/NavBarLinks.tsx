@@ -21,7 +21,7 @@ const StyledImg = styled.img`
     @media (max-width: 25em) {
         width: 2.5rem;
         height: 2.5rem;
-        margin-right: 3rem;
+        margin-right: 0;
     }
 `;
 const StyledImg2 = styled.img`

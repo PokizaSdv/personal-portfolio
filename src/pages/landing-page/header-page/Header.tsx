@@ -2,10 +2,15 @@ import styled from "styled-components";
 import { Container, HeaderLeft, HeaderRight } from "../../../components";
 
 const StyledContainer = styled(Container)`
-    padding-right: 0 !important;
+    padding-right: 0;
+
     @media (max-width: 56em) {
         flex-wrap: wrap;
+        padding-bottom: 0;
+        padding-left: var(--space-4);
+        padding-right: var(--space-4);
     }
+
 `
 
 const HeaderSection = () => {
