@@ -23,27 +23,23 @@ const AboutContent = () => {
                     
                     <div className="wrapper">
                         <Icon iconName="email" />
-                        <p className="paragraph-md">pokizadev@gmail.com</p>
+                        <a className="paragraph-md" href="mailto:pokizadev@gmail.com">pokizadev@gmail.com</a>
                     </div>
-                    {/* <p className="display-md">Phone</p> */}
+                   
                     <div className="wrapper">
                         <Icon iconName="phone" />
-                        <p className="paragraph-md">347-889-8848</p>
+                        <a className="paragraph-md" href="tel:+19293347203">347-889-8848</a>
                     </div>
 
                     <div className="wrapper">
                     <Icon iconName="github-primary" /> 
-                        <p className="paragraph-md">github.com/pokizadev</p>
+                        <a className="paragraph-md" href="https://github.com/pokizadev">github.com/pokizadev</a>
                     </div>
 
                     <div className="wrapper">
                     <Icon iconName="linkedin-primary" />
-                        <p className="paragraph-md">linkedin.com/in/pokizadev</p>
+                        <a className="paragraph-md" href="https://www.linkedin.com/feed/">linkedin.com/in/pokizadev</a>
                     </div>
-
-                        
-                        
-                        
                 </div>
             </div>
         </div>
