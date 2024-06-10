@@ -3,10 +3,7 @@ import { Button } from "../design-system/Button";
 
 const FileViewer: React.FC = () => {
     const openFile = () => {
-        window.open(
-            process.env.PUBLIC_URL + "/resume.pdf",
-            "_blank"
-        );
+        window.open(process.env.PUBLIC_URL + "/resume1.pdf", "_blank");
     };
 
     return (
