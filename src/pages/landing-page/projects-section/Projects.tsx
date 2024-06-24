@@ -28,7 +28,7 @@ export const projects: Project[] = [
         description:
             "Electronic commerce platform. Your website is the cornerstone of your online presence. At our agency, we specialize in creating web masterpieces that stand out from the crowd. Let us help you bring your vision to life and create a web masterpiece that represents your brand in the best possible light",
         githubLink: "https://github.com/pokizadev/furniture-website-react",
-        demoLink: "furniture-website-react-pokiza.netlify.app"
+        demoLink: "https://furniture-website-react-4kwn.onrender.com"
     }
 ];
 
