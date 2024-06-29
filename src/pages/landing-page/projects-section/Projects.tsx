@@ -18,9 +18,9 @@ export const projects: Project[] = [
         imgUrl: restaurantImg,
         title: "Eleganzo Italian Restaurant Website",
         description:
-            "he Eleganzo restaurant website, built with React, showcases the restaurant's modern Italian charm with sleek design and seamless functionality. Utilizing HTML, CSS, and JavaScript, the site features intuitive sign-up and sign-in pages, a detailed menu, contact information, and an easy-to-use table reservation system. Enhanced by a captivating hero section and a comprehensive footer, the website offers an engaging and user-friendly experience for all visitors.",
+            "The Eleganzo restaurant website, built with React, showcases the restaurant's modern Italian charm with sleek design and seamless functionality. Utilizing HTML, CSS, and JavaScript, the site features intuitive sign-up and sign-in pages, a detailed menu, contact information, and an easy-to-use table reservation system. Enhanced by a captivating hero section and a comprehensive footer, the website offers an engaging and user-friendly experience for all visitors.",
         githubLink: "https://github.com/pokizadev/retaurant-website-react",
-        demoLink: "https://retaurant-website-react.onrender.com"
+        demoLink: "https://restaurant-eleganzo.com"
     },
     {
         imgUrl: furnitureImg,
